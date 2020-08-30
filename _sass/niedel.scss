@@ -1,0 +1,88 @@
+
+body {
+  @extend .blue-grey, .darken-4;
+  @extend .blue-grey-text, .text-lighten-4;
+}
+
+.content-wrapper {
+  @extend .blue-grey, .darken-4 !optional;
+}
+
+.post-list > li {
+  @extend .z-depth-3 !optional;
+  @extend .blue-grey, .darken-3 !optional;
+  overflow: hidden;
+}
+
+.post-excerpt-container {
+  display: flex;
+}
+
+.post-excerpt-header > h3 {
+  margin: 0 0 1rem 0; // Fixed margin
+}
+
+.post-excerpt-header > .post-meta {
+  margin-top: 1rem;
+}
+
+.post-list > li > .row {
+  margin: 0;
+}
+
+@media #{$small-and-down} {
+  // styles for small screens and down
+  $margin: 1rem;
+  $padding: 1rem;
+
+  .content-wrapper {
+    padding: $padding;
+    margin: $margin;
+  }
+
+  .post-list-heading {
+    margin: 0 0 $margin 0;
+  }
+
+  .post-list > li {
+    margin: 0 0 $margin 0;
+  }
+
+  .post-excerpt-header {
+    padding: $padding;
+  }
+
+  .post-excerpt-body {
+    padding: $padding;
+  }
+}
+
+@media #{$medium-and-up} {
+  // styles for medium screens and larger
+  $margin: 3rem;
+  $padding: 3rem;
+
+  .content-wrapper {
+    padding: $padding;
+    margin: $margin;
+  }
+
+  .post-list-heading {
+    margin: 0 0 $margin 0;
+  }
+
+  .post-list > li {
+    margin: 0 0 $margin 0;
+  }
+
+  .post-excerpt-header {
+    padding: $padding;
+  }
+
+  .post-excerpt-body {
+    padding: $padding;
+  }
+}
+
+
+
