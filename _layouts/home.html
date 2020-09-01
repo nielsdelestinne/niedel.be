@@ -6,7 +6,7 @@ layout: default
   <div class="introduction-banner-container">
       <div class="introduction-banner-content center-align">
         <div class="container">
-          <h1 class="flow-text">
+          <p class="flow-text">
             <span class="highlight">A true believer of software craftsmanship and the eXtreme Programming practices.</span>
           <p class="flow-text">
             <span class="highlight">Strives to write readable, flexible and simple code that is properly tested.</span>
@@ -38,6 +38,8 @@ layout: default
                     <a class="post-link" href="{{ post.url | relative_url }}">
                       {{ post.title | escape }}
                     </a>
+                    <a href="{{ post.url | relative_url }}"
+                       class="btn-floating btn-small waves-effect waves-light purple"><i class="material-icons white-text">play_arrow</i></a>
                   </h3>
                   <i class="tiny material-icons">access_time</i>
                   {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}

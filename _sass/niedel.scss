@@ -1,6 +1,13 @@
 body {
   @extend .blue-grey, .darken-4;
   @extend .blue-grey-text, .text-lighten-4;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
 }
 
 .brand-logo {
@@ -36,6 +43,12 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
+.post-link:hover {
+  background: linear-gradient(to left, #ffe082, #ffb167, #ff7a70, #ff4392, #cf2ec1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .introduction-banner-wrapper {
   overflow: hidden;
 }
@@ -59,6 +72,29 @@ body {
   display: inline-block;
 }
 
+.no-margin {
+  margin: 0;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.social-media-list {
+  list-style: none;
+  margin-left: 0;
+  text-decoration: none;
+}
+
+.svg-icon {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  fill: #fff;
+  margin-right: 10px;
+  vertical-align: text-top;
+}
+
 @media #{$medium-and-up} {
   // styles for medium screens and larger
   $margin: 3rem;
@@ -74,9 +110,17 @@ body {
     padding: 0;
   }
 
+  .page-footer {
+    margin-top: $margin * 2;
+  }
+
+  .page-footer > .container,  .footer-copyright > .container{
+    padding: 0 $padding 0 $padding;
+  }
+
   .introduction-banner-container {
     margin: -76px 0 $margin -10%;
-    padding: ($padding * 3.5) 0 ($padding * 1) 10%;
+    padding: ($padding * 2.75) 0 ($padding * 1) 10%;
   }
 
   .post-list-heading {
@@ -115,9 +159,17 @@ body {
     padding: 0;
   }
 
+  .page-footer {
+    margin-top: $margin * 2;
+  }
+
+  .page-footer > .container,  .footer-copyright > .container{
+    padding: 0 $padding 0 $padding;
+  }
+
   .introduction-banner-container {
     margin: -56px 0 $margin -10%;
-    padding: ($padding * 3.5) 0 ($padding * 1) 10%;
+    padding: ($padding * 2.75) 0 ($padding * 1) 10%;
   }
 
   .content-wrapper {
