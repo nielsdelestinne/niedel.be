@@ -21,9 +21,10 @@
 title: Niels Delestinne
 email: hello@niedel.be
 description: >- # this means to ignore newlines until "baseurl:"
-  A true believer of software craftsmanship and the eXtreme Programming practices.
+  A true believer of software craftsmanship and the XP practices.
   Strives to write readable, flexible and simple code that is properly tested.
-  Aims to create maintainable and flexible applications in team. Embraces and enjoys continuous learning. Favors cats over dogs.
+  Aims to create maintainable and flexible applications in team. Embraces and enjoys continuous learning.
+  Sometimes writes an article on a technical topic.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  nielsdelestinne
