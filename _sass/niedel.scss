@@ -43,6 +43,10 @@ hr.fade {
   margin: 0 0 1rem 0; // Fixed margin
 }
 
+.post-excerpt-body > p {
+  margin: 0 !important;
+}
+
 .post-list > li > .row {
   margin: 0;
 }
@@ -111,6 +115,10 @@ hr.fade {
 
   p {
     margin: $margin 0 $margin 0;
+  }
+
+  .post-excerpt-header {
+    min-height: 270px;
   }
 
   .content-wrapper {

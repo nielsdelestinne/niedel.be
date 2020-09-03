@@ -6,6 +6,10 @@ author: "Niels Delestinne"
 categories: jekyll website theme
 ---
 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consectetur finibus tortor, et hendrerit velit ultrices ac. Etiam vestibulum mollis felis, ac pellentesque dui fringilla ut. Nunc nec ex sit amet nisl interdum fringilla. Duis egestas pretium purus cursus dapibus. In suscipit a libero eu vehicula. Aliquam ac nisi nibh.
+
+Afamet, consectetur adipiscing elit. Phasellus consectetur finibus tortor, et hendrerit velit ultrices ac. Etiam vestibulum mollis felis, ac pellentesque dui fringilla ut. Nunc nec ex sit amet nisl interdum fringilla. Duis egestas pretium purus cursus dapibus. In suscipit a libero eu vehicula. Aliquam ac nisi nibh. Integer aliquet felis eros, ullamcorper lacinia arcu suscipit sed. Nullam pellentesque elementum ultrices. Aenean elementum efficitur mauris non mattis. Vivamus rhoncus ex sit amet lobortis pretium.
+
 1. Installation steps from official Jekyll tutorial
 2. Explore initial setup & breakdown of file structure (what is generate, what not, git ignores,...)
 3. Custom theme steps (as in website: https://jekyllrb.com/docs/themes/)
