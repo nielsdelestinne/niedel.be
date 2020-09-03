@@ -1,14 +1,38 @@
 ---
 layout: default
 ---
-<article class="post">
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title | escape }}</h1>
-  </header>
-
-  <div class="post-content">
-    {{ content }}
+<div class="introduction-banner-wrapper">
+  <div class="introduction-banner-container move-to-background">
+<!--    <div class="introduction-banner-content center-align">-->
+<!--      <div class="container">-->
+<!--        <p class="flow-text">-->
+<!--            <span class="highlight">A true believer of software craftsmanship and the XP practices.-->
+<!--              Strives to write readable, flexible and simple code that is properly tested.-->
+<!--              Aims to create maintainable and flexible applications in team. Embraces and enjoys continuous learning...-->
+<!--              <i>and sometimes writes an article on a technical topic.</i>-->
+<!--            </span>-->
+<!--        </p>-->
+<!--      </div>-->
+<!--    </div>-->
   </div>
+</div>
 
-</article>
+<div class="container">
+  <div class="content-wrapper z-depth-5">
+
+    <article class="post">
+
+      <header class="post-header">
+        <h1 class="post-title">{{ page.title | escape }}</h1>
+      </header>
+
+      <div class="post-content">
+        {{ content }}
+      </div>
+
+    </article>
+
+  </div>
+</div>
+

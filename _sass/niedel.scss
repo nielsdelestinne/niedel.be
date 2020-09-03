@@ -62,6 +62,7 @@ main {
   background-image: linear-gradient(to right, rgba(255, 224, 130, 0.8),rgba(255, 167, 101, 0.75), rgba(240, 109, 100, 0.70), rgba(204, 55, 114, 0.65), rgba(142, 24, 132, 0.6));
   transform: rotate(-1.5deg);
   width: 110%;
+  min-height: 350px;
 }
 
 .introduction-banner-content {
@@ -97,6 +98,11 @@ main {
   fill: #fff;
   margin-right: 10px;
   vertical-align: text-top;
+}
+
+.move-to-background {
+  position: fixed;
+  z-index: -10;
 }
 
 @media #{$medium-and-up} {
