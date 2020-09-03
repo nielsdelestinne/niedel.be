@@ -53,20 +53,18 @@ main {
   -webkit-text-fill-color: transparent;
 }
 
-.introduction-banner-wrapper {
+.top-page-banner-wrapper {
   overflow: hidden;
 }
 
-.introduction-banner-container {
+.top-page-banner-container {
   @extend .z-depth-2 !optional;
+  position: fixed;
+  z-index: -10;
   background-image: linear-gradient(to right, rgba(255, 224, 130, 0.8),rgba(255, 167, 101, 0.75), rgba(240, 109, 100, 0.70), rgba(204, 55, 114, 0.65), rgba(142, 24, 132, 0.6));
   transform: rotate(-1.5deg);
   width: 110%;
   min-height: 350px;
-}
-
-.introduction-banner-content {
-  transform: rotate(1.5deg);
 }
 
 .highlight {
@@ -100,11 +98,6 @@ main {
   vertical-align: text-top;
 }
 
-.move-to-background {
-  position: fixed;
-  z-index: -10;
-}
-
 @media #{$medium-and-up} {
   // styles for medium screens and larger
   $margin: 3rem;
@@ -128,13 +121,9 @@ main {
     padding: 0 $padding 0 $padding;
   }
 
-  .introduction-banner-container {
+  .top-page-banner-container {
     margin: -76px 0 $margin -10%;
     padding: ($padding * 2.75) 0 ($padding * 1) 10%;
-  }
-
-  .introduction-banner-content > .container > .flow-text{
-    margin: $margin;
   }
 
   .post-list-heading {
@@ -181,13 +170,9 @@ main {
     padding: 0 $padding 0 $padding;
   }
 
-  .introduction-banner-container {
+  .top-page-banner-container {
     margin: -56px 0 $margin -10%;
     padding: ($padding * 2.75) 0 ($padding * 1) 10%;
-  }
-
-  .introduction-banner-content > .container > .flow-text{
-    margin: ($margin * 3) $margin $margin $margin;
   }
 
   .content-wrapper {
