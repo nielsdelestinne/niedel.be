@@ -13,7 +13,7 @@ layout: default
     <div class="home">
 
       {%- if page.title -%}
-        <span class="float-right"><a href="{{ '/feed.xml' | relative_url }}" class="waves-effect waves-light btn-small black-text"><i class="material-icons right">rss_feed</i>Subscribe</a></span>
+        <span class="right"><a href="{{ '/feed.xml' | relative_url }}" class="waves-effect waves-light btn-small black-text"><i class="material-icons right">rss_feed</i>Subscribe</a></span>
         <h1 class="page-heading">{{ page.title }}</h1>
       {%- endif -%}
 
@@ -45,6 +45,9 @@ layout: default
               </div>
             </div>
           </li>
+          <div class="hide-on-med-and-up">
+            <div class="spacer-mobile"></div>
+          </div>
           {%- endfor -%}
         </ul>
 

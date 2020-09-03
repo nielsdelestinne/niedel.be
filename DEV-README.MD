@@ -5,3 +5,9 @@
 3. Build the site and make it available on a local server.
     - `bundle exec jekyll serve`
 
+## Todo
+- disqus
+- pagination
+- tags
+- images?
+- Mobile menu
