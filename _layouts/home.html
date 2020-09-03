@@ -9,8 +9,8 @@ layout: default
           <p class="flow-text">
             <span class="highlight">A true believer of software craftsmanship and the XP practices.
               Strives to write readable, flexible and simple code that is properly tested.
-              Aims to create maintainable and flexible applications in team. Embraces and enjoys continuous learning.
-              Sometimes writes an article on a technical topic.
+              Aims to create maintainable and flexible applications in team. Embraces and enjoys continuous learning...
+              <i>and sometimes writes an article on a technical topic.</i>
             </span>
           </p>
         </div>
@@ -24,6 +24,7 @@ layout: default
     <div class="home">
 
       {%- if page.title -%}
+        <span class="float-right"><a href="{{ '/feed.xml' | relative_url }}" class="waves-effect waves-light btn-small black-text"><i class="material-icons right">rss_feed</i>Subscribe</a></span>
         <h1 class="page-heading">{{ page.title }}</h1>
       {%- endif -%}
 
@@ -40,8 +41,6 @@ layout: default
                     <a class="post-link" href="{{ post.url | relative_url }}">
                       {{ post.title | escape }}
                     </a>
-                    <a href="{{ post.url | relative_url }}"
-                       class="btn-floating btn-small waves-effect waves-light purple"><i class="material-icons white-text">play_arrow</i></a>
                   </h3>
                   <i class="tiny material-icons">access_time</i>
                   {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
@@ -60,7 +59,6 @@ layout: default
           {%- endfor -%}
         </ul>
 
-        <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
       {%- endif -%}
 
     </div>

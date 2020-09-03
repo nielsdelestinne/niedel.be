@@ -14,6 +14,11 @@ main {
   font-size: 1.8rem !important;
 }
 
+.float-right {
+  float: right;
+  position: relative;
+}
+
 .content-wrapper {
   @extend .blue-grey, .darken-4 !optional;
 }
@@ -43,7 +48,7 @@ main {
 }
 
 .post-link:hover {
-  background: linear-gradient(to left, #ffe082, #ffb167, #ff7a70, #ff4392, #cf2ec1);
+  background: linear-gradient(to left, #ffe082, #ffe082);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
