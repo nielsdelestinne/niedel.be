@@ -10,9 +10,18 @@ main {
   flex: 1 0 auto;
 }
 
+h2 {
+  @extend .amber-text, .text-lighten-3 !optional;
+  font-size: xx-large;
+}
+
 .p {
   line-height: 1.5;
   font-size: large;
+}
+
+.footer-avatar {
+  max-height: 150px;
 }
 
 p {
@@ -130,6 +139,10 @@ hr.fade {
   height: 2rem;
 }
 
+.post-content > p > img {
+  @extend .responsive-img, .circle;
+}
+
 @media #{$medium-and-up} {
   // styles for medium screens and larger
   $margin: 3rem;
@@ -137,6 +150,11 @@ hr.fade {
 
   p {
     margin: ($margin / 1.5) 0 ($margin / 1.5) 0;
+  }
+
+  .post-content > p > img {
+    max-width: 275px;
+    float: right;
   }
 
   .post-excerpt-header {
@@ -202,7 +220,7 @@ hr.fade {
   $padding: 1rem;
 
   p {
-    margin: ($margin / 1.5) 0 ($margin / 1.5) 0;
+    margin: $margin 0 $margin 0;
   }
 
   .container {

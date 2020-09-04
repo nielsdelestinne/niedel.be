@@ -4,19 +4,46 @@ title: Who?
 permalink: /who/
 ---
 
-> A true believer of software craftsmanship and the eXtreme Programming practices. Strives to write readable, flexible and simple code that is properly tested. Aims to create maintainable and flexible applications in team. Embraces and enjoys continuous learning. Favors cats over dogs. 😻 
+> Hey there! I'm Niels Delestinne and I'm a Belgian software developer by both trade and passion. 
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+## A bit of history and some minor flexing
+![Niels Delestinne](/assets/niels.jpg)
+I was bitten by the programming bug at the age of 12, creating dynamic websites in XHTML, CSS & PHP. Not much later, 
+I was creating animations & interactive websites with Macromedia Flash. 
+By the age of 18, I started my studies in informatics and opened my online web bureau [Minia](http://minia.be) for 
+business (every student needs to generate a bit of pocket money, right?).
+In 2015 I graduated from [KUL](https://www.kuleuven.be/english/) with a MSc in Applied Informatics.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lectus dui, rhoncus fermentum ultricies sed, malesuada vestibulum nibh. Curabitur maximus elit nulla, id auctor magna finibus at. Vivamus efficitur erat quis nibh posuere, sed pulvinar odio vestibulum. Aliquam erat volutpat. Pellentesque viverra dolor metus, et hendrerit nulla imperdiet sit amet. Pellentesque consequat dui ac porttitor convallis. Sed congue eros a mauris facilisis, vitae dictum augue tempus. Phasellus maximus eros dictum massa dignissim posuere sit amet non justo. Nullam nulla leo, aliquam non nulla scelerisque, elementum eleifend orci. Nam molestie metus sit amet enim placerat euismod. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam facilisis massa ut eros suscipit, in mattis dui commodo. Vestibulum porttitor sagittis massa, vel lacinia nisi viverra quis. Nunc in nunc mattis, pulvinar lorem ac, tempus massa.
+My professional career took a head start at [Cegeka](https://cegeka.com), where I've been growing from a software 
+engineer into an application architect. Together with an amazing colleague, we were given the chance to found and 
+grow [Switchfully](https://switchfully.com): an internal venture in which we set out to find extraordinary individuals, 
+train them into software developers during an intensive bootcamp and integrate them into our client's software teams.
+Although loving to train these bright and passionate minds, I decided to switch (fully) back to what I loved most: programming. 
+To this day, I still am a proud employee of Cegeka and currently working on creating an advanced payroll engine for one of our customers.
 
-Pellentesque quis nisl id libero finibus pulvinar. Aenean ipsum urna, molestie eu augue ut, faucibus pellentesque quam. Vestibulum cursus tristique risus vel eleifend. Praesent leo quam, viverra quis lectus non, blandit semper purus. Curabitur sollicitudin nibh ac tellus varius, id rutrum tellus consectetur. Vestibulum dapibus, velit eu tempus rutrum, dui arcu posuere ligula, at rhoncus risus ligula eget odio. Maecenas interdum magna nec pellentesque interdum. Donec tincidunt in urna imperdiet condimentum.
+## Developers, developers, developers!
+   
+Professionally, I mostly program in Java (11+) and make use of its entire ecosystem for writing the back end. 
+Whenever there's the need for a front end, I tend to the Angular framework in combination with TypeScript.
+More specifically, we're talking about:
+- Spring Framework, Spring Boot (and other Spring projects)
+- Libraries and specifications such as Jackson & JPA
+- Build tools such as Maven & Gradle
+- Testing frameworks like Cucumber & JUnit
+- Platforms such as OpenShift, Nexus & SonarQube 
+- Integration tools like Jenkins and Liquibase 
+- The Angular framework
+- Angular CLI
+- JavaScript package managers such as NPM and Yarn
+- Webpack as module bundler
+- Coffee without milk
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+> I'm a true believer of software craftsmanship and the eXtreme Programming practices. I always strive to write readable, flexible and simple code that is properly tested. 
+> I Aim to create maintainable and flexible applications in team & embrace continuous learning. 
 
+In my free time, I like to dabble with different languages, frameworks & technologies which I apply on pet project that never see light of day... 
+But, as long as I have fun doing so, I'm doing it right.
+ 
+From time to time, I will write an article on a technical topic which will be published on this blog. Hopefully you will read and find something useful on here.
 
-[jekyll-organization]: https://github.com/jekyll
+Cya, Niels!
