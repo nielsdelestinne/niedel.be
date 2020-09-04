@@ -10,9 +10,13 @@ main {
   flex: 1 0 auto;
 }
 
-p {
+.p {
   line-height: 1.5;
   font-size: large;
+}
+
+p {
+  @extend .p;
 }
 
 .post-content > ul > li, .post-content > ol > li {
