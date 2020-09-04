@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: Who?
+permalink: /who/
 ---
 
 > A true believer of software craftsmanship and the eXtreme Programming practices. Strives to write readable, flexible and simple code that is properly tested. Aims to create maintainable and flexible applications in team. Embraces and enjoys continuous learning. Favors cats over dogs. 😻 

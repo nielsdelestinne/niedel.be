@@ -12,7 +12,16 @@ main {
 
 p {
   line-height: 1.5;
-  font-size: medium;
+  font-size: large;
+}
+
+.post-content > ul > li, .post-content > ol > li {
+  line-height: 1.5;
+  font-size: large;
+}
+
+.post-content > ul > li {
+  list-style-type: circle;
 }
 
 .brand-logo {
@@ -49,6 +58,15 @@ hr.fade {
 
 .post-list > li > .row {
   margin: 0;
+}
+
+.post-list-item:last-of-type {
+  margin: 0 !important;
+}
+
+.post-list {
+  padding-left: 0;
+  list-style-type: none;
 }
 
 .post-title {

@@ -3,14 +3,13 @@
     <div class="row">
       <div class="col l5 s12 no-margin no-padding">
         <h5><span>Niels</span><span>.</span><span class="amber-text text-lighten-3">delestinne</span><span>()</span><span class="amber-text text-lighten-3">;</span></h5>
-        <p class="grey-text text-lighten-1">
+        <div class="grey-text text-lighten-1">
           {{- site.description | escape -}}
-        </p>
+        </div>
       </div>
       <div class="col l3 offset-l1 s12">
         <h5 class="white-text">Navigation</h5>
         <ul>
-
           {%- for path in page_paths -%}
           {%- assign my_page = site.pages | where: "path", path | first -%}
           {%- if my_page.title -%}
@@ -27,8 +26,7 @@
   </div>
   <div class="footer-copyright black">
     <div class="container">
-      © Copyright 2020, Niels Delestinne
-      <a class="right" href="mailto:{{ site.email }}">{{ site.email }}</a>
+      © Copyright 2020, Niels Delestinne • <a href="mailto:{{ site.email }}">{{ site.email }}</a>
     </div>
   </div>
 </footer>
