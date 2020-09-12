@@ -6,6 +6,10 @@
     - `bundle exec jekyll serve`
 
 ## Todo
+- Genereer ssl certificaat voor domeinnaam
+- Maak forward adres aan naar gmail (zie f&d)
+- force https (htaccess, zie f&d)
+- Maak ftp user aan
 - Github actions (copy from f&d)
     - specifieke ftp user + password
 - Schrijf artikel
