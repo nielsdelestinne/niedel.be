@@ -1,12 +1,15 @@
 ---
 layout: post
 title:  "Build a static website with a custom theme using Jekyll"
-date:   2020-08-31 19:45:00 +0200
+date:   2020-08-31
 author: "Niels Delestinne"
-categories: jekyll website theme
+categories: website
+comments: true
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consectetur finibus tortor, et hendrerit velit ultrices ac. Etiam vestibulum mollis felis, ac pellentesque dui fringilla ut. Nunc nec ex sit amet nisl interdum fringilla.
+
+## Jappa
 
 Afamet, consectetur adipiscing elit. Phasellus consectetur finibus tortor, et hendrerit velit ultrices ac. Etiam vestibulum mollis felis, ac pellentesque dui fringilla ut. Nunc nec ex sit amet nisl interdum fringilla. Duis egestas pretium purus cursus dapibus. In suscipit a libero eu vehicula. Aliquam ac nisi nibh. Integer aliquet felis eros, ullamcorper lacinia arcu suscipit sed. Nullam pellentesque elementum ultrices. Aenean elementum efficitur mauris non mattis. Vivamus rhoncus ex sit amet lobortis pretium.
 

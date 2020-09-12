@@ -6,7 +6,7 @@
     - `bundle exec jekyll serve`
 
 ## Todo
-- disqus
-- pagination
-- tags
-- images?
+- Github actions (copy from f&d)
+    - specifieke ftp user + password
+- Schrijf artikel
+- Publish
