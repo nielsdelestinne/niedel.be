@@ -10,4 +10,3 @@
 - pagination
 - tags
 - images?
-- Mobile menu

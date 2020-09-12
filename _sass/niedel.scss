@@ -31,6 +31,8 @@ p {
 .post-content > ul > li, .post-content > ol > li {
   line-height: 1.5;
   font-size: large;
+  margin-left: 2em;
+  padding-left: 0.5em;
 }
 
 .post-content > ul > li {
@@ -141,6 +143,11 @@ hr.fade {
 
 .post-content > p > img {
   @extend .responsive-img, .circle;
+}
+
+ul, ol {
+  margin-left: 0;
+  padding-left: 0;
 }
 
 @media #{$medium-and-up} {
