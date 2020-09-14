@@ -296,6 +296,12 @@ ul, ol {
  * All rights reserved: Minima
  */
 
+.language-plaintext {
+  @extend .grey, .darken-4;
+  @extend .z-depth-1;
+  padding: 0.2rem;
+}
+
 .highlight {
   @extend .grey, .darken-4;
   @extend .z-depth-3;
