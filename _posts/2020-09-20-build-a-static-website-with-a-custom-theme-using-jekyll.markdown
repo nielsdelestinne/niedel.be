@@ -248,11 +248,11 @@ Good luck and have fun!
 ## Continuous Deployment
 
 Using GitHub Actions, we can easily automate the process of building the Jekyll website and deploying it to a web server 
-after each push to the remote repository. For an example, see the [source code of this blog](https://github.com/nielsdelestinne/niedel/.github/workflows/build-and-publish.yml).
+after each push to the remote repository. For an example, see the [source code of this blog](https://github.com/nielsdelestinne/niedel.be/blob/master/.github/workflows/build-and-publish.yml).
 
 ## Resources
 
-You can find the entire source code of this website & blog on [github.com](https://github.com/nielsdelestinne/niedel).
+You can find the entire source code of this website & blog on [github.com](https://github.com/nielsdelestinne/niedel.be).
 
 The following official resources contain more information on the discusses topics above:
 - [Installation](https://jekyllrb.com/docs/installation/) 
