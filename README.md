@@ -1,5 +1,7 @@
 # Sourcecode of niedel.be
 
+![Build and Deploy](https://github.com/nielsdelestinne/niedel.be/workflows/Build%20and%20Deploy/badge.svg)
+
 Niels Delestinne's blog.
 - See the code in action on [niedel.be](https://niedel.be)
 
