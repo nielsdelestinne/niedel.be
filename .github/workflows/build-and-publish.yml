@@ -20,7 +20,7 @@ jobs:
       - name: Save Artifact
         uses: actions/upload-artifact@v2
         with:
-          name: friesndice-website
+          name: niedel-website
           path: _site
 
       - name: Deploy using FTP
