@@ -145,8 +145,12 @@ hr.fade {
   height: 2rem;
 }
 
-.post-content > p > img {
+.single-page > p > img {
   @extend .responsive-img, .circle;
+}
+
+.post-content > p > img {
+  @extend .responsive-img;
 }
 
 ul, ol {
@@ -163,7 +167,7 @@ ul, ol {
     margin: ($margin / 1.5) 0 ($margin / 1.5) 0;
   }
 
-  .post-content > p > img {
+  .single-page > p > img {
     max-width: 275px;
     float: right;
   }

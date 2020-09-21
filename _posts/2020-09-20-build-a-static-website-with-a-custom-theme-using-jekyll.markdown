@@ -121,7 +121,6 @@ So, let's provide a brief overview on what's what:
  
 Render the website and take a peek at what it looks like on [http://127.0.0.1:4000/](http://127.0.0.1:4000/):
 
-TODO CORRECT IMAGE
 ![Default Theme](/assets/img/2020-09-20/default-theme.jpg)
 
 Closely look at your project directory, a new directory `_site` will have emerged. It's your generated website, 
