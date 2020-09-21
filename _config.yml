@@ -30,6 +30,7 @@ github_username:  nielsdelestinne
 linkedin_username: nielsde
 disqus:
   shortname: niedel
+  enabled: false
 show_excerpts: true
 
 # Build settings
