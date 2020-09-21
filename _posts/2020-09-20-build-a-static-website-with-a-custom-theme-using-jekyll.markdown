@@ -178,7 +178,7 @@ Execute the following command in order to locate the installation directory:
 bundle info --path minima
 {% endhighlight %}
 
-The installation directory (e.g. `PATH/lib/ruby/gems/2.7.0/gems/minima-2.5.1`), should be returned by the command.
+The installation directory (e.g. _PATH/lib/ruby/gems/2.7.0/gems/minima-2.5.1_), should be returned by the command.
 Navigate to the found directory and copy all files (excluding the `README.md`) to your own project's root directory.
 Your project's root directory should now contain the following files and directories:
 
