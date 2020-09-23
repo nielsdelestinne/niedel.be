@@ -13,12 +13,13 @@ layout: default
     <div class="home">
 
       {%- if page.title -%}
-        <span class="right"><a href="{{ '/feed.xml' | relative_url }}" class="waves-effect waves-light btn-small black-text"><i class="material-icons right">rss_feed</i>Subscribe</a></span>
+        <span class="right"><a href="{{ '/feed.xml' | relative_url }}" class="btn-floating btn-small waves-effect waves-light"><i class="material-icons black-text">rss_feed</i></a></span>
         <h1 class="page-heading amber-text text-lighten-3">{{ page.title }}</h1>
       {%- endif -%}
 
       {{ content }}
 
+      <div class="top-margin">
       {%- if site.posts.size > 0 -%}
         <ul class="post-list">
           {%- for post in site.posts -%}
@@ -53,6 +54,7 @@ layout: default
         </ul>
 
       {%- endif -%}
+      </div>
 
     </div>
 

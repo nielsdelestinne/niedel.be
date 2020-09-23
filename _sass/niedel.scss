@@ -16,7 +16,8 @@ h2 {
 }
 
 .post-content > h3 {
-  font-size: xx-large;
+  @extend .amber-text, .text-lighten-3 !optional;
+  font-size: x-large;
 }
 
 .p {
@@ -293,8 +294,38 @@ ul, ol {
     padding: $padding;
   }
 
+  .top-margin {
+    margin-top: $margin * 2  !important;
+  }
+
   .nav-inner-content {
     padding: 0 $padding 0 $padding;
+  }
+
+  blockquote {
+    border-left: 0;
+    margin: 0;
+    padding: 0.25rem 0;
+    position: relative;
+  }
+
+  blockquote p {
+    position: relative;
+    z-index: 1;
+  }
+
+  blockquote p::before {
+    content: '\00a0\00a0\00a0\00a0\00a0\00a0';
+  }
+
+  blockquote::before {
+    content:'“';
+    font-size: 8rem;
+    color: rgb(255, 224, 130);
+    position: absolute;
+    top: -2rem;
+    left: -0.5rem;
+    z-index: 0;
   }
 
 }
