@@ -168,9 +168,6 @@ In order to do so, we will have to...
 
 ### Copy theme files
 
-> The minima theme is open source and available under the [MIT license](https://opensource.org/licenses/MIT), so we can freely copy and modify it. 
-> Do include the LICENSE.txt file though.
-
 In order to copy the minima theme files, we need to locate the installation directory of the minima gem.
 Execute the following command in order to locate the installation directory:
 
@@ -178,7 +175,10 @@ Execute the following command in order to locate the installation directory:
 bundle info --path minima
 {% endhighlight %}
 
-The installation directory (e.g. _PATH/lib/ruby/gems/2.7.0/gems/minima-2.5.1_), should be returned by the command.
+> The minima theme is open source and available under the [MIT license](https://opensource.org/licenses/MIT), so we can freely copy and modify it. 
+> Do include the LICENSE.txt file though.
+
+The installation directory (e.g. _PATH/gems/minima-2.5.1_), should be returned by the command.
 Navigate to the found directory and copy all files (excluding the `README.md`) to your own project's root directory.
 Your project's root directory should now contain the following files and directories:
 
