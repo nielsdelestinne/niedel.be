@@ -6,7 +6,7 @@ permalink: /who/
 
 > Hey there! I'm Niels Delestinne and I'm a Belgian software developer by both trade and passion. 
 
-## A bit of history and some minor flexing
+## Who am I?
 ![Niels Delestinne](/assets/niels.jpg)
 I was bitten by the programming bug at the age of 12, creating dynamic websites in XHTML, CSS & PHP. Not much later, 
 I was creating animations & interactive websites with Macromedia Flash. 
@@ -15,15 +15,15 @@ business (every student needs to generate a bit of pocket money, right?).
 In 2015 I graduated from [KUL](https://www.kuleuven.be/english/) with a MSc in Applied Informatics.
 
 My professional career took a head start at [Cegeka](https://cegeka.com), where I've been growing from a software 
-engineer into an application architect. Together with an amazing colleague, we were given the chance to found and 
+engineer into an application architect. Some years later, together with an amazing colleague, we were given the chance to found and 
 grow [Switchfully](https://switchfully.com): an internal venture in which we set out to find extraordinary individuals, 
-train them into software developers during an intensive bootcamp and integrate them into our client's software teams.
-Although loving to train these bright and passionate minds, I decided to switch (fully) back to what I loved most: programming. 
-To this day, I still am a proud employee of Cegeka and currently working on creating an advanced payroll engine for one of our customers.
+train them into software developers during an intensive programming bootcamp and integrate them into our client's software teams.
+Although loving to train these passionate individuals, I decided to switch (fully) back to what I love most: programming. 
+To this day, I am still a proud employee of Cegeka and currently working on the creation of an advanced payroll engine for one of our customers.
 
-## Developers, developers, developers!
+## Technical background 
    
-Professionally, I mostly program in Java (11+) and make use of its entire ecosystem for writing the back end. 
+Professionally, I currently program in Java (11+) and make use of its entire ecosystem for writing the back end. 
 Whenever there's the need for a front end, I tend to the Angular framework in combination with TypeScript.
 More specifically, we're talking about:
 - Spring Framework, Spring Boot (and other Spring projects)
@@ -41,9 +41,9 @@ More specifically, we're talking about:
 > I'm a true believer of software craftsmanship and the eXtreme Programming practices. I always strive to write readable, flexible and simple code that is properly tested. 
 > I Aim to create maintainable and flexible applications in team & embrace continuous learning. 
 
-In my free time, I like to dabble with different languages, frameworks & technologies which I apply on pet project that never see light of day... 
+When I'm programming in my free time, I like to dabble with different languages, frameworks & technologies which I apply on pet projects that almost never see light of day... 
 But, as long as I have fun doing so, I'm doing it right.
  
 From time to time, I will write an article on a technical topic which will be published on this blog. Hopefully you will read and find something useful on here.
 
-Cya, Niels!
+Cya, Niels
