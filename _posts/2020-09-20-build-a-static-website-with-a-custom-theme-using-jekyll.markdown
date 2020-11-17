@@ -3,11 +3,12 @@ layout: post
 title:  "Build a static website with a custom theme using Jekyll"
 date:   2020-09-20
 author: "Niels Delestinne"
-categories: website
+categories: website jekyll
 comments: true
 ---
 
-Jekyll is a blog-enabled static site generator that cleanly separates content from mark-up. It renders these source files into static pages ready for deployment. Sounds good? Great, I'll guide you through the fundamentals!   
+Jekyll is a blog-enabled static site generator that cleanly separates content from mark-up. 
+It renders these source files into static pages ready for deployment. Sounds good? Great, I'll help you set it up.
 
 ## Installation 
 
@@ -16,15 +17,16 @@ Jekyll is written in Ruby and requires Ruby to be installed on your local develo
 2. Validate the installation by checking its version: `ruby -v`
 2. Ruby will come packaged with RubyGem, validate the installation by checking its version: `gem -v`
 
-Jekyll is a so-called Gem, which is a 'distribution' or 'artifact' in Ruby's ecosystem. It contains the code and documentation of an application or library.
-Once Ruby is installed, we can install the Jekyll & [Bundler](https://rubygems.org/gems/bundler) Gems: 
+Jekyll is a so-called Gem, which is a 'distribution' or 'artifact' in Ruby's ecosystem. 
+It contains the code and documentation of an application or library.
+Once installed, we can install the Jekyll & [Bundler](https://rubygems.org/gems/bundler) Gems: 
 {% highlight text %}
 gem install jekyll bundler
 {% endhighlight %}
 
 ## Initialization
 
-The next step is to generate the entire technical skeleton of the new website we want to create.
+The next step is to generate the technical skeleton for the new website we want to create.
 
 Create a new Jekyll website by using the Jekyll Gem:
 {% highlight text %}
@@ -33,7 +35,8 @@ jekyll new your-new-website
 
 A new directoy `./your-new-website` is created.
 
-When executing a command, it's always interesting to inspect the output. For the `new` command of `jekyll`, we detect all the (transitive) dependencies that are downloaded and installed:
+When executing a command, it's always interesting to inspect the output. 
+For the `new` command of `jekyll`, we detect all the (transitive) dependencies that are downloaded and installed:
 - 35 gems (dependencies) are installed
 - The version of Jekyll we are depending on is 4.1.1. 
 
@@ -117,15 +120,15 @@ So, let's provide a brief overview on what's what:
 **_config.yml** 
 - Contains the configuration of your website (settings, variables, activated plugins, meta information,...)
 
-> Besides configuration and content, there is no actual HTML or (S)CSS contained in the project directory. This is only possible when there's a clean separation between content and mark-up.
+> Besides configuration and content, there is no actual HTML or (S)CSS contained in the project directory. This demonstrates Jekyll's clean separation of content and mark-up.
  
 Render the website and take a peek at what it looks like on [http://127.0.0.1:4000/](http://127.0.0.1:4000/):
 
 ![Default Theme](/assets/img/2020-09-20/default-theme.jpg)
 
-Closely look at your project directory, a new directory `_site` will have emerged. It's your generated website, 
-containing only static files (html, css & images). These will be the files you eventually deploy and the files that will 
-be served upon requests by browsers.
+Closely look at your project directory, a new directory `_site` will have emerged. It contains your generated website, 
+which consists of static files only (html, css & images). These will be the files you eventually deploy and the files that will 
+be served and downloaded by browsers when they make a request to your web-server. 
 
 ## Version Control
 
@@ -164,7 +167,7 @@ a custom theme encapsulated within our project.
 
 In order to do so, we will have to...
 1. Copy the minima theme files to our project's root directory
-2. Cut the ties to the minima theme in our `Gemfile` and `_config.yml` file. 
+2. Perform some clean-up by removing the references to the minima theme in our `Gemfile` and `_config.yml` file. 
 
 ### Copy theme files
 
@@ -214,9 +217,9 @@ Let's provide a brief overview on the directories you included in your project:
 **Assets** directory:
 - Contains all the assets of your theme (such as images) and the main entry-point of the scss.
 
-### Cut the ties
+### Clean-up references
 
-Before tweaking or completely overhaul the minima theme, it's best to clean up the references to it:
+Before tweaking or completely overhauling the minima theme, it's best to clean up the references to it:
 1. In the `Gemfile` file, remove line `gem "minima", "~> 2.5"` (and the comment above it)
 2. In the `_config.yml` file, remove line `theme: minima`
 
@@ -239,11 +242,10 @@ plugins:
 
 Almost there:
 1. Re-serve your website using `bundle exec jekyll serve` (stop & start). 
-2. Navigate to [http://127.0.0.1:4000/](http://127.0.0.1:4000/) and validate the theme is not broken.
+2. Navigate to [http://127.0.0.1:4000/](http://127.0.0.1:4000/) and validate your website still looks exactly like before.
 3. Commit your changes.
 
-Et voila, you are good to go. Customize the theme to your own needs, you have full control over it.
-Good luck and have fun! 
+You are now able to customize the theme to your own needs, as have full control over it.
 
 ## Continuous Deployment
 
