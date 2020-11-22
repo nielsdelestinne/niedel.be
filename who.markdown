@@ -44,6 +44,6 @@ More specifically, we're talking about:
 When I'm programming in my free time, I like to dabble with different languages, frameworks & technologies which I apply on pet projects that almost never see light of day... 
 But, as long as I have fun doing so, I'm doing it right.
  
-From time to time, I will write an article on a technical topic which will be published on this blog. Hopefully you will read and find something useful on here.
+From time to time, I will write and publish an article on a technical topic. Hopefully you will find and read something useful on here!
 
 Cya, Niels
