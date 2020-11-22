@@ -256,7 +256,7 @@ after each push to the remote repository. For an example, see the [source code o
 
 You can find the entire source code of this website & blog on [github.com](https://github.com/nielsdelestinne/niedel.be).
 
-The following official resources contain more information on the discusses topics above:
+The following official resources contain more information on the discussed topics above:
 - [Installation](https://jekyllrb.com/docs/installation/) 
 - [Quickstart](https://jekyllrb.com/docs/) 
 - [Step by step tutorial](https://jekyllrb.com/docs/step-by-step/01-setup/) 
