@@ -29,18 +29,31 @@ We should stop treating JSON messages as implicit, second class citizen, contrac
 
 ## Asserting API Compatibility
 
-**The question at hand**: how can we better enforce or maintain API compatibility when using JSON as the data-interchange format?
+If you have a project landscape that:
+- Involves many applications
+- And all of these applications communicate with each other (e.g. microservices architecture)
+- And all of these applications are maintained by different development teams
+
+Then, ensuring API compatibility becomes an active, non-trivial issue. 
+
+So, how can we better enforce or maintain API compatibility when using JSON as the data-interchange format?
+
+### JSON Schema
 
 Let's take a look at **JSON Schema**. JSON Schema is a non-standardized specification for describing the data structure of your JSON messages. You make the
 message structure (contract) up front & explicit. It enables a test-first approach and allows the contract to be asserted in a lightweight test. Schemas are a great solution for enforcing API compatibility.
 - Unfortunately, JSON Schema is considered (too) **verbose** by many developers. it uses JSON as its Interface Definition Language (IDL), which certainly contributes to the verboseness. 
 It is also considered to have a steep learning curve (which can be ruled as rather subjective).
 
+### End to end testing
+
 A different approach and solution is to perform some kind of API compatibility testing. We could write an end-to-end test in which we perform
 an actual call from the consumer to the producer. If either producer or consumer made a change that negatively impacted API compatibility,
 the test will fail. This approach has some downsides to it, some of the more prominent are:
 - Expensive: setting up & running two (dockerized) applications to perform a test will result in a resource-expensive and slow(er) test.
 - Late feedback: With this approach, you will be notified during (test execution) runtime not during compile-time.
+
+### Contract testing
 
 Another solution is to use contract-testing tools like PACT or Spring Cloud Contract (Java). These tools allow to create 
 explicit message contracts on top of your JSON messages. They offer integrations with existing testing frameworks (e.g. JUnit5).
