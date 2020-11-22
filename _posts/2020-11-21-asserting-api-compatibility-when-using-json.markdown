@@ -3,7 +3,7 @@ layout: post
 title:  "Asserting API Compatibility when using JSON"
 date:   2020-11-21
 author: "Niels Delestinne"
-categories: json java api compatibility
+categories: java api json
 comments: true
 ---
 

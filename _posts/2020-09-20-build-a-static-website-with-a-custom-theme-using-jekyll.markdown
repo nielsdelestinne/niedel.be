@@ -3,7 +3,7 @@ layout: post
 title:  "Build a static website with a custom theme using Jekyll"
 date:   2020-09-20
 author: "Niels Delestinne"
-categories: website jekyll
+categories: webdesign jekyll
 comments: true
 ---
 
