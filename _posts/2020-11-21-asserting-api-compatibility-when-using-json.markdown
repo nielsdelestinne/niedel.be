@@ -14,7 +14,7 @@ it's vital to enforce and assert API compatibility.
 ## API Compatibility
 
 When working with HTTP-based REST(ful) web APIs or even with an event-driven architecture, JSON is frequently used as the 
-data-interchange format. The exchanged JSON messages themselves are often the implicit 'contract' between the producer and consumer.
+data-interchange format. The exchanged JSON messages themselves are often the implicit 'contracts' between the producer and consumer.
 Not having an explicit contract makes it hard to enforce and maintain **API compatibility** between producer and consumer(s), 
 the 'contract' can be easily broken by accident: 
 - E.g. The serialization performed by the producer is not properly aligned with the deserialization performed by the consumer. 
@@ -42,7 +42,7 @@ So, how can we better enforce or maintain API compatibility when using JSON as t
 
 Let's take a look at **JSON Schema**. JSON Schema is a non-standardized specification for describing the data structure of your JSON messages. You make the
 message structure (contract) up front & explicit. It enables a test-first approach and allows the contract to be asserted in a lightweight test. Schemas are a great solution for enforcing API compatibility.
-- Unfortunately, JSON Schema is considered (too) **verbose** by many developers. it uses JSON as its Interface Definition Language (IDL), which certainly contributes to the verboseness. 
+- Unfortunately, JSON Schema is considered (too) **verbose** by many developers. it uses JSON as its Intermediate Definition Language (IDL), which certainly contributes to the verboseness. 
 It is also considered to have a steep learning curve (which can be ruled as rather subjective).
 
 ### End to end testing
