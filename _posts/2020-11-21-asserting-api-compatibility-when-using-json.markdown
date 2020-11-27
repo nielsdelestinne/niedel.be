@@ -73,5 +73,5 @@ The following official resources contain more information on the discussed topic
 - [JSON Schema](https://json-schema.org/) 
 - [PACT](https://pact.io/) 
 - [PACT Documentation](https://docs.pact.io/) 
-- [Spring CLoud Contract](https://spring.io/projects/spring-cloud-contract) 
-- [Spring CLoud Contract Documentation](https://cloud.spring.io/spring-cloud-contract/reference/html/) 
+- [Spring Cloud Contract](https://spring.io/projects/spring-cloud-contract) 
+- [Spring Cloud Contract Documentation](https://cloud.spring.io/spring-cloud-contract/reference/html/) 
