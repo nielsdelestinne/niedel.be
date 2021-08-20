@@ -1,4 +1,4 @@
-# Sourcecode of niedel.be
+# Source code of niedel.be
 
 ![Build and Deploy](https://github.com/nielsdelestinne/niedel.be/workflows/Build%20and%20Deploy/badge.svg)
 
