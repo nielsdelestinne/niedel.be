@@ -1,10 +1,11 @@
-From ruby:2.7.4
+From jekyll/jekyll:4.1.0 
 
-COPY Gemfile Gemfile.lock ./
-RUN bundle install
+WORKDIR /usr/src/app
 
 COPY . .
 
-RUN gem install jekyll bundler
+RUN chmod -R 777 .
 
-CMD ["./start"]
+EXPOSE 4000/tcp
+
+ENTRYPOINT jekyll serve
