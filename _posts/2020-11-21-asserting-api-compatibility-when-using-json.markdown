@@ -11,6 +11,8 @@ It is often too easy to break API compatibility when using JSON as the data-inte
 application landscape where we have many producing applications and even more consuming applications, 
 it's vital to enforce and assert API compatibility. 
 
+<!-- excerpt-end -->
+
 ## API Compatibility
 
 When working with HTTP-based REST(ful) web APIs or even with an event-driven architecture, JSON is frequently used as the 

@@ -10,6 +10,8 @@ comments: true
 Jekyll is a blog-enabled static site generator that cleanly separates content from mark-up. 
 It renders these source files into static pages ready for deployment. Sounds good? Great, I'll help you set it up.
 
+<!-- excerpt-end -->
+
 ## Installation 
 
 Jekyll is written in Ruby and requires Ruby to be installed on your local development environment.

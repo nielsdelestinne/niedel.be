@@ -11,6 +11,8 @@ Protocol Buffers offers a schema-driven method to serialize data using an optimi
 binary encoding. It offers speed, size efficiency, type-safety and simplicity. Think XML but smaller & faster. 
 Think JSON, but with different tradeoffs. 
 
+<!-- excerpt-end -->
+
 ## API Compatibility
 
 In a previous article, I wrote about [asserting API compatibility when using JSON as the data-interchange format]({% post_url 2020-11-21-asserting-api-compatibility-when-using-json %}). 
