@@ -9,9 +9,7 @@ comments: true
 
 It is often too easy to break API compatibility when using JSON as the data-interchange format. In an 
 application landscape where we have many producing applications and even more consuming applications, 
-it's vital to enforce and assert API compatibility. 
-
-<!-- excerpt-end -->
+it's vital to enforce and assert API compatibility.
 
 ## API Compatibility
 

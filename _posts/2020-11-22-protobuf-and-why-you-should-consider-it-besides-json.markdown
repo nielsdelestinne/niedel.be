@@ -9,9 +9,7 @@ comments: true
 
 Protocol Buffers offers a schema-driven method to serialize data using an optimized 
 binary encoding. It offers speed, size efficiency, type-safety and simplicity. Think XML but smaller & faster. 
-Think JSON, but with different tradeoffs. 
-
-<!-- excerpt-end -->
+Think JSON, but with different tradeoffs.
 
 ## API Compatibility
 
