@@ -17,7 +17,7 @@ Niels Delestinne's blog.
 
 ### Jekyll Docker image version
 
-Status: **Largely done**
+Status: ✅**Done**
 
 We would like to have Jekyll v4.1.1 or higher as it introduced the automatically generated excerpts, using: `show_excerpts: true`
 - [x] Bump to a higher version (note Jekyll docker image v4.1.1 does not exist)
