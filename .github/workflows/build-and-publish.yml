@@ -15,7 +15,10 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Build
-        uses: jerryjvl/jekyll-build-action@v1
+        uses: nielsdelestinne/jekyll-build@v0.1.0-alpha
+        with:
+          jekyll-version: 4.2.0
+          verbose: true
 
       - name: Save Artifact
         uses: actions/upload-artifact@v2
