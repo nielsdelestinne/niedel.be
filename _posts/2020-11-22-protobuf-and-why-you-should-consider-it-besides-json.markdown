@@ -4,12 +4,14 @@ title:  "Protobuf, and why you should consider it besides JSON"
 date:   2020-11-22
 author: "Niels Delestinne"
 categories: java api protobuf
-comments: true
+comments: false
 ---
 
 Protocol Buffers offers a schema-driven method to serialize data using an optimized 
 binary encoding. It offers speed, size efficiency, type-safety and simplicity. Think XML but smaller & faster. 
 Think JSON, but with different tradeoffs.
+
+<!--more-->
 
 ## API Compatibility
 

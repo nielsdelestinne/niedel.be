@@ -4,12 +4,14 @@ title:  "Asserting API Compatibility when using JSON"
 date:   2020-11-21
 author: "Niels Delestinne"
 categories: java api json
-comments: true
+comments: false
 ---
 
 It is often too easy to break API compatibility when using JSON as the data-interchange format. In an 
 application landscape where we have many producing applications and even more consuming applications, 
 it's vital to enforce and assert API compatibility.
+
+<!--more-->
 
 ## API Compatibility
 

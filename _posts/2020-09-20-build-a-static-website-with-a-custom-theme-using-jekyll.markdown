@@ -4,11 +4,13 @@ title:  "Build a static website with a custom theme using Jekyll"
 date:   2020-09-20
 author: "Niels Delestinne"
 categories: webdesign jekyll
-comments: true
+comments: false
 ---
 
 Jekyll is a blog-enabled static site generator that cleanly separates content from mark-up. 
 It renders these source files into static pages ready for deployment. Sounds good? Great, I'll help you set it up.
+
+<!--more-->
 
 ## Installation 
 

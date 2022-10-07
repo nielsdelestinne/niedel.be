@@ -4,11 +4,13 @@ title:  "A few words on multi-project workspaces in Angular"
 date:   2021-03-02
 author: "Niels Delestinne"
 categories: front-end angular
-comments: true
+comments: false
 ---
 
 A typical Angular workspace contains a single project. Each new project requires a new workspace. Configuration gets duplicated and 
 reuse of modules is possible but not straightforward. A multi-project workspace might be a better fit.
+
+<!--more-->
 
 ## What's wrong with a typical workspace?
 
