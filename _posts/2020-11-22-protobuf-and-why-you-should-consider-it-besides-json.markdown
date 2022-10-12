@@ -21,7 +21,7 @@ In a previous article, I wrote about [asserting API compatibility when using JSO
 data-interchange format. The exchanged JSON messages themselves are often the implicit 'contracts' between the producer and consumer.
 Not having an explicit contract makes it hard to enforce and maintain **API compatibility** between producer and consumer(s), the 'contract' can be easily broken by accident. 
 
-In that article, I discussed the problems (and some solutions) to not having an explicit contract for the (JSON) messages your applications exchange (though their APIs).
+In that article, I discussed the problems (and some solutions) to not having an explicit contract for the (JSON) messages your applications exchange (through their APIs).
 One of these solutions was using JSON schema to explicitly define the data structure of every message. 
 However, JSON schema is verbose and offers no additional benefits, besides more easily asserting API compatibility.
 
