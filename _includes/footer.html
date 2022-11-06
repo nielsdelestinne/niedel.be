@@ -1,13 +1,14 @@
 <footer class="page-footer">
   <div class="container">
-    <div class="row">
-      <div class="col l5 s12 no-margin no-padding">
+    <div class="row padding-bottom">
+      <div class="col l7 s12 no-margin no-padding">
         <h5><span>niels</span><span>.</span><span class="amber-text text-lighten-3">delestinne</span><span>()</span><span class="amber-text text-lighten-3">;</span></h5>
-        <div class="grey-text text-lighten-1">
+        <p class="grey-text text-lighten-1">
           {{- site.description | escape -}}
-        </div>
+        </p>
+
       </div>
-      <div class="col l3 offset-l1 s6">
+      <div class="col l2 offset-l1 s6">
         <h5 class="white-text">Navigation</h5>
         <ul>
           {%- for path in page_paths -%}
@@ -18,7 +19,7 @@
           {%- endfor -%}
         </ul>
       </div>
-      <div class="col l3 s6">
+      <div class="col l2 s6">
         <h5 class="white-text">Find me on</h5>
         {%- include social.html -%}
       </div>

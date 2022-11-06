@@ -1,7 +1,8 @@
 <header class="site-header" role="banner">
 
     <div class="wrapper">
-        {%- assign default_paths = site.pages | map: "path" -%}
+        {%- assign pages_ordered = site.pages | sort: "order" -%}
+        {%- assign default_paths = pages_ordered | map: "path" -%}
         {%- assign page_paths = site.header_pages | default: default_paths -%}
 
         {%- if page_paths -%}
@@ -15,11 +16,12 @@
                     </a>
                     <ul class="right hide-on-med-and-down">
                         {%- for path in page_paths -%}
-                        {%- assign my_page = site.pages | where: "path", path | first -%}
+                        {%- assign my_page = pages_ordered | where: "path", path | first -%}
                         {%- if my_page.title -%}
                         <li><a href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a></li>
                         {%- endif -%}
                         {%- endfor -%}
+
                     </ul>
                 </div>
             </div>
@@ -27,13 +29,12 @@
 
         <ul class="sidenav grey darken-4" id="nav-mobile">
             {%- for path in page_paths -%}
-            {%- assign my_page = site.pages | where: "path", path | first -%}
+            {%- assign my_page = pages_ordered | where: "path", path | first -%}
             {%- if my_page.title -%}
             <li><a class="waves-effect waves-light btn amber lighten-3 grey-text text-darken-4" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a></li>
             {%- endif -%}
             {%- endfor -%}
         </ul>
-
         {%- endif -%}
 
     </div>

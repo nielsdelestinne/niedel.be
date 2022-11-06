@@ -2,6 +2,7 @@
 layout: page
 title: Who?
 permalink: /who/
+order: 2
 ---
 
 > Hey there! I'm Niels Delestinne and I'm a Belgian software developer by both trade and passion. 
@@ -38,8 +39,7 @@ More specifically, we're talking about:
 - Webpack as module bundler
 - Coffee without milk
 
-> I'm a true believer of software craftsmanship and the eXtreme Programming practices. I always strive to write readable, flexible and simple code that is properly tested. 
-> I Aim to create maintainable and flexible applications in team & embrace continuous learning. 
+> A full-stack software developer and tech lead with active professional knowledge on Java, Angular and both of their entire ecosystems. A true believer of software craftsmanship and the eXtreme Programming practices. Strives to write readable, flexible and simple code that is properly tested. Aims to create maintainable and flexible applications in team. Embraces and enjoys continuous learning. Coaches and tries to inspire. Considers both operational as non-operational requirements in his designs. Creative and friendly.
 
 When I'm programming in my free time, I like to dabble with different languages, frameworks & technologies which I apply on pet projects that almost never see light of day... 
 But, as long as I have fun doing so, I'm doing it right.

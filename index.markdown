@@ -1,6 +1,7 @@
 ---
 layout: home
 title: Blog
+order: 1
 ---
 
 > Hey there! I'm Niels Delestinne and I'm a Belgian software developer by both trade and passion. 
