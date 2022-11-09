@@ -14,14 +14,11 @@
       $('.downloading-cv').show();
       $('.download-cv').hide();
 
-      html2canvas(document.body).then((canvas) => {
-        const containerElement = document.createElement("a");
-        containerElement.download = `niels_delestinne_cv_${Date.now()}.png`;
-        containerElement.href = canvas.toDataURL("application/pdf");
-        containerElement.click();
-        $('.download-cv').show();
+      setTimeout(() => {
         $('.downloading-cv').hide();
-      });
+        $('.download-cv').show();
+      }, 1500);
+
     });
 
   }); // end of document ready
