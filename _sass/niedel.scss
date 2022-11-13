@@ -24,7 +24,7 @@ h5 {
   font-size: x-large;
 }
 
-.education, .learning {
+.education, .learning, .languages {
   @extend .blue-grey, .darken-3;
 }
 
@@ -239,6 +239,15 @@ progress[value]::-webkit-progress-value {
     margin: $margin 0 $margin 0;
   }
 
+  .languages {
+    padding: $padding;
+    margin: $margin $margin $margin 0;
+  }
+
+  .languages:last-of-type {
+    margin-right: 0;
+  }
+
   .single-page > p > img {
     max-width: 275px;
     float: right;
@@ -334,6 +343,11 @@ progress[value]::-webkit-progress-value {
   .education, .learning {
     padding: $padding;
     margin: $margin;
+  }
+
+  .languages {
+    padding: $padding;
+    margin: $margin 0 $margin 0;
   }
 
   .container {
