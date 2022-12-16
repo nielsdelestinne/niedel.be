@@ -217,6 +217,10 @@ progress[value]::-webkit-progress-value {
   border-radius: 2px;
 }
 
+.print-notice {
+  display: none
+}
+
 @media #{$medium-and-up} {
   // styles for medium screens and larger
   $margin: 3rem;

@@ -9,11 +9,11 @@ layout: default
 
 <div class="cv">
 
-    <div class="container">
+    <section class="container">
         <div class="content-wrapper-cv z-depth-5">
-            <span class="right"><a class="btn download-cv btn-small waves-effect waves-light" title="Download CV"
-                                   href="/assets/cv/niels_delestinne_cv_20221311_print.pdf" download><i
-                    class="material-icons black-text">file_download</i></a></span>
+            <span class="right"><button class="btn download-cv btn-small waves-effect waves-light" title="Download CV"
+                                   onclick="window.print()"><i
+                    class="material-icons black-text">file_download</i></button></span>
             <span class="right"><button class="btn downloading-cv btn-small waves-effect waves-light"
                                         title="Downloading..." disabled><i
                     class="material-icons black-text">refresh</i></button></span>
@@ -53,14 +53,15 @@ layout: default
                 <div>
                     <time class="dt-published padding-right-half" datetime="13/11/2022" itemprop="datePublished">
                         <i class="tiny material-icons">access_time</i>
-                        <em>CV updated on 13/11/2022, view online at <a href="https://niedel.be/cv" title="Niels Delestinne CV" target="_blank">niedel.be/cv</a>.</em>
+                        <em class="online-notice">CV updated on 13/11/2022.</em>
+                        <em class="print-notice">View the most recent version of my CV online at <a href="https://niedel.be/cv" title="Niels Delestinne CV" target="_blank">niedel.be/cv</a>.</em>
                     </time>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="container no-margin-bottom">
+    <section class="container no-margin-bottom">
         <div class="content-wrapper z-depth-5">
             <h2 class="no-margin">Profile</h2>
             <p class="flow-text no-margin-bottom no-padding-bottom">
@@ -79,9 +80,9 @@ layout: default
                 <strong>friendly</strong> and - according to his friends only "moderately" - <strong>funny</strong>.
             </p>
         </div>
-    </div>
+    </section>
 
-    <div class="container">
+    <section class="container">
         <div class="row content-wrapper z-depth-5 flex">
             <div class="padding-right-half">
 
@@ -262,9 +263,9 @@ layout: default
 
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="container">
+    <section class="container skills-section">
         <div class="row content-wrapper-cv z-depth-5 flex">
 
             <div class="col s12 l6">
@@ -420,9 +421,9 @@ layout: default
             </div>
         </div>
 
-    </div>
+    </section>
 
-    <div class="container">
+    <section class="container eduction-section">
         <div class="content-wrapper z-depth-5">
             <h2 class="no-margin">Higher education</h2>
 
@@ -470,9 +471,9 @@ layout: default
                     internship at Prague, Czechia.</em></p>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="container">
+    <section class="container">
         <div class="content-wrapper z-depth-5">
             <h2 class="no-margin">Continuous learning</h2>
 
@@ -685,9 +686,9 @@ layout: default
             </div>
 
         </div>
-    </div>
+    </section>
 
-    <div class="container">
+    <section class="container language-section">
         <div class="content-wrapper z-depth-5">
             <h2 class="no-margin">Languages</h2>
 
@@ -728,9 +729,9 @@ layout: default
             </div>
 
         </div>
-    </div>
+    </section>
 
-    <div class="container no-margin-bottom">
+    <section class="container no-margin-bottom">
         <div class="content-wrapper z-depth-5 no-margin-bottom">
             <h2 class="no-margin">Want to get in touch?</h2>
             <p class="flow-text no-margin-bottom no-padding-bottom">
@@ -739,6 +740,6 @@ layout: default
                     title="LinkedIn">linkedin.com/in/niedel</a>.
             </p>
         </div>
-    </div>
+    </section>
 
 </div>

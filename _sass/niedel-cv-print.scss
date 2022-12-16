@@ -1,0 +1,169 @@
+@media print {
+  $margin: 1rem;
+  $padding: 1rem;
+  $print-color: #5a85ba;
+
+  /* Reset background colors & images */
+  html, body, div, section, p, h2, .no-margin, .blue-grey, .learning, .languages, .education, .top-page-banner-container {
+    background-color: white !important;
+    background-image: none !important;
+  }
+
+  /* Hide header, nav & footer */
+  header, nav, footer {
+    display: none;
+  }
+
+  /* Hide button to download cv */
+  .download-cv {
+    display: none;
+  }
+
+  body, ul, li {
+    color: black !important;
+  }
+
+  p {
+    margin: ($margin / 1.5) 0 ($margin / 1.5) 0;
+    color: black !important;;
+  }
+
+  .amber-text, .material-icons, .amber-text.text-lighten-3, .text-lighten-3, a {
+    color: $print-color !important;
+  }
+
+  /* Show a special message when printing */
+  .print-notice {
+    display: inline;
+  }
+
+  /* Hide the special message when viewing online */
+  .online-notice {
+    display: none;
+  }
+
+  /* Reduce image size */
+  .cv img {
+    max-width: 125px;
+  }
+
+  /* Reset shadows */
+  .z-depth-1, .z-depth-2, .z-depth-3, .z-depth-4, .z-depth-5 {
+    box-shadow: 0 0 0 0;
+  }
+
+  /* Hide hr line visually (but do register its margin) */
+  hr.fade {
+    margin: $margin 0 $margin 0;
+    visibility: hidden;
+  }
+
+  .badge {
+    color: black;
+    padding: 0.10em 0.25em 0.10em 0.25em;
+    border-radius: 5px;
+    border: 1px solid $print-color !important;
+    background-color: #d3e7f3 !important;
+    font-size: 0.75em;
+  }
+
+  /* Restyle progress bar */
+  /* =========================== */
+
+  progress[value] {
+    /* Reset the default appearance */
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    max-height: 15px;
+  }
+
+  progress[value]::-webkit-progress-bar {
+    background-color: #000000 !important;
+    border-radius: 2px;
+    border: 0.5px dashed #555555;
+  }
+
+  progress[value]::-webkit-progress-value {
+    background-color: $print-color !important;
+    border-radius: 2px;
+    border: 1px solid black;
+  }
+
+  /* =========================== */
+
+  /* Tweaks to margin & padding */
+  /* =========================== */
+
+  .content-wrapper {
+    padding: 0;
+    margin: 0 0 $margin * 3 0;
+  }
+
+  .content-wrapper-cv {
+    margin: 0 0 $margin * 3 0;
+  }
+
+  .content-wrapper-cv-inner {
+    padding: 0;
+    margin: 0;
+  }
+
+  .col.s12 {
+    padding: 0;
+    margin: 0;
+  }
+
+  .flex-element {
+    margin: $margin * 3 0 0 0 !important;
+  }
+
+  .skills-section {
+    margin-top: $margin * 3 !important;
+    margin-bottom: $margin * 3 !important;
+  }
+
+  .language-section {
+    margin-top: $margin * 3 !important;
+  }
+
+  .languages {
+    margin: $margin 0 0 0 !important;
+    padding: 0 !important;
+  }
+
+  .learning {
+    margin: $margin * 2 0 0 0 !important;
+    padding: 0 !important;
+  }
+
+  .education {
+    margin: $margin * 2 0 0 0 !important;
+    padding: 0 !important;
+  }
+
+  .education-section {
+    padding: $padding * 3 0 0 0 !important;
+  }
+
+  .padding-right-half {
+    padding-right: $padding;
+  }
+
+  .cv-details {
+    margin: $margin / 2 0 $margin /2 0;
+  }
+
+  .languages:last-of-type {
+    margin-right: 0;
+  }
+
+  /* =================================== */
+
+}
+
+/* Page size and print margins */
+@page {
+  size: 8.5in 11in;
+  margin: 1in 0.5in 1in 0.5in;
+}
