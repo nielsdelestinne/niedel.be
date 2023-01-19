@@ -3,60 +3,159 @@ layout: default
 ---
 
 <div class="top-page-banner-wrapper">
-  <div class="top-page-banner-container">
-  </div>
+    <div class="top-page-banner-container">
+    </div>
 </div>
 
-<div class="container">
-  <div class="content-wrapper z-depth-5">
-
-    <div class="home">
-
-      {%- if page.title -%}
-        <span class="right"><a href="{{ '/feed.xml' | relative_url }}" class="btn-floating btn-small waves-effect waves-light"><i class="material-icons black-text">rss_feed</i></a></span>
-        <h1 class="page-heading amber-text text-lighten-3">{{ page.title }}</h1>
-      {%- endif -%}
-
-      {{ content }}
-
-      <div class="top-margin">
-      {%- if site.posts.size > 0 -%}
-        <ul class="post-list">
-          {%- for post in site.posts -%}
-          <li class="post-list-item">
-            <div class="row post-excerpt-container">
-              <div class="col s12 l6 grey darken-4">
-                <div class="post-excerpt-header">
-                  <h3>
-                    <a class="post-link" href="{{ post.url | relative_url }}">
-                      {{ post.title | escape }}
-                    </a>
-                  </h3>
-                  <i class="tiny material-icons">access_time</i>
-                  {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-                  <span class="post-meta"> {{ post.date | date: date_format }}</span>
+<div class="cv">
+    <section class="container">
+        <div class="content-wrapper-cv z-depth-5">
+            <span class="right"><a class="btn btn-small waves-effect waves-light black-text" title="Get in touch"
+                                   href="mailto:hello@niedel.be"><i
+                    class="material-icons black-text">email</i></a></span>
+            <div class="content-wrapper-cv-inner">
+                <div>
+                    <img src="/assets/niels.jpg" class="right" alt="Niels Delestinne">
                 </div>
-              </div>
-              <div class="col s12 l6">
-                <div class="post-excerpt-body">
-                {%- if site.show_excerpts -%}
-                  {{ post.excerpt }}
-                {%- endif -%}
-                  <a class="p" href="{{ post.url | relative_url }}">Read more</a>
+                <div class="flex">
+                    <h1 class="post-title no-margin" itemprop="name headline">Niels Delestinne</h1>
+                    <p class="flow-text no-margin-bottom">
+                        An experienced Belgian <strong>freelance full-stack software developer</strong> & <strong>tech
+                        lead</strong> passionate about delivering <strong>quality software</strong>.
+                    </p>
                 </div>
-              </div>
             </div>
-          </li>
-          <div class="hide-on-med-and-up">
-            <div class="spacer-mobile"></div>
-          </div>
-          {%- endfor -%}
-        </ul>
+        </div>
+    </section>
+</div>
 
-      {%- endif -%}
-      </div>
+<section class="container">
+    <div class="content-wrapper-cv z-depth-5">
+        <div class="home content-wrapper-cv-inner">
+
+            <h2 class="no-margin">Who?</h2>
+            <p class="flow-text no-margin-bottom no-padding-bottom">
+                A freelance <strong>full-stack software developer</strong> & <strong>tech lead</strong> with active professional
+                knowledge on <strong>Java, Angular</strong> and
+                both of their <strong>entire ecosystems</strong>. A true believer of <strong>software
+                craftsmanship</strong> and
+                the <strong>eXtreme Programming
+                practices</strong>. Strives to write <strong>readable, flexible</strong> and <strong>simple
+                code</strong> that
+                is properly <strong>tested</strong>. Aims to create
+                <strong>maintainable</strong> and <strong>flexible</strong> applications together, in team. Embraces and enjoys
+                <strong>continuous
+                    learning</strong>. <strong>Coaches</strong> and tries to inspire. Considers both
+                <strong>operational</strong> as <strong>non-operational</strong> requirements in his software designs. <strong>Creative</strong>,
+                <strong>friendly</strong> and <em>slightly</em> <strong>funny</strong>.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="container language-section">
+    <div class="content-wrapper z-depth-5">
+        <h2 class="no-margin">What?</h2>
+
+        <div class="flex">
+            <div class="flex-element z-depth-3 languages no-margin-bottom">
+                <h5 class="center-align amber-text text-lighten-3"><i class="large material-icons">build</i><br>Software development</h5>
+                <div class="cv-details valign-wrapper">
+                    <div class="flex">
+                        <div class="center-align">
+                            Skillfully designed, craftfully implemented custom software. Using industry best practices & taking into account all requirements.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-element z-depth-3 languages no-margin-bottom">
+                <h5 class="center-align amber-text text-lighten-3"><i class="large material-icons">devices</i><br>Web development</h5>
+                <div class="cv-details valign-wrapper">
+                    <div class="flex">
+                        <div class="center-align">
+                            Interactive, dynamic and responsive web apps & websites created using mature and stable frameworks, combining both UI and UX.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-element z-depth-3 languages no-margin-bottom">
+                <h5 class="center-align amber-text text-lighten-3"><i class="large material-icons">explore</i><br>Technical leadership</h5>
+                <div class="cv-details valign-wrapper">
+                    <div class="flex">
+                        <div class="center-align">
+                            Guiding, empowering & coaching teams as a technical lead. Clear, open & well-structured communication between all involved parties.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
+</section>
 
-  </div>
-</div>
+<section class="container language-section">
+    <div class="content-wrapper z-depth-5">
+        <h2 class="no-margin">Recommendations</h2>
+
+        <div class="flex">
+            <div class="flex-element z-depth-3 languages no-margin-bottom">
+                <h5 class="center-align amber-text text-lighten-3"><i class="large material-icons">account_circle</i><br>Darek Krzywania</h5>
+                <h6 class="center-align"><em>Agile coach at Mediagenix</em></h6>
+                <div class="cv-details valign-wrapper">
+                    <div class="flex">
+                        <div class="center-align">
+                            It has been clear from our first assignment together that Niels is a driven developer and technical lead. His dedication, creativity and technical coaching skills became even more apparent during - and after - the start-up of Switchfully. A colleague I have much confidence in and would highly recommend.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-element z-depth-3 languages no-margin-bottom">
+                <h5 class="center-align amber-text text-lighten-3"><i class="large material-icons">account_circle</i><br>Reinaut Van Bets</h5>
+                <h6 class="center-align"><em>Program manager at Cegeka</em></h6>
+                <div class="cv-details valign-wrapper">
+                    <div class="flex">
+                        <div class="center-align">
+                            I had the opportunity to create a new business unit within Cegeka with Niels. His combination of entrepreneurship and creativity allows him to quickly envision and create concepts.
+                            Niels puts craftsmanship and focus in all of his work, raising the bar for himself and taking continuous learning seriously. In brief: working together with Niels is both educational and a true pleasure.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-element z-depth-3 languages no-margin-bottom">
+                <h5 class="center-align amber-text text-lighten-3"><i class="large material-icons">account_circle</i><br>Gilliam Flebus</h5>
+                <h6 class="center-align"><em>Freelance web developer</em></h6>
+                <div class="cv-details valign-wrapper">
+                    <div class="flex">
+                        <div class="center-align">
+                            Niels is one of the most driven and passionate people I know. Delivering something half-baked is not an option. There's not many people I'd confidently give a project to if it has to be done well, but Niels is certainly one of them.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="container no-margin-bottom">
+    <div class="content-wrapper z-depth-5 no-margin-bottom">
+        <h2 class="no-margin">Open for new assignments?</h2>
+        <p class="flow-text no-margin-bottom no-padding-bottom">
+            <i class="material-icons">lock_outline</i> Currently I'm working <strong>on a full-time basis</strong> as a <strong>freelance full-stack software developer</strong> for the fine people of <a href="https://kunlabora.be" title="Kunlabora" target="_blank">Kunlabora</a>.
+        </p>
+        <p>
+            <em>I'm always open for <strong>a coffee</strong> and for some <strong>smaller, after-hour projects</strong> (e.g. a WordPress website), but <strong>closed for others</strong>.</em>
+        </p>
+    </div>
+</section>
+
+<section class="container no-margin-bottom">
+    <div class="content-wrapper z-depth-5 no-margin-bottom">
+        <h2 class="no-margin">Want to get in touch?</h2>
+        <p class="flow-text no-margin-bottom no-padding-bottom">
+            Feel free to contact me through <a href="mailto:hello@niedel.be">hello@niedel.be</a> or <a
+                href="https://www.linkedin.com/in/niedel" target="_blank"
+                title="LinkedIn">linkedin.com/in/niedel</a>.
+        </p>
+    </div>
+</section>
