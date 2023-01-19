@@ -1,0 +1,61 @@
+---
+layout: default
+---
+
+<div class="top-page-banner-wrapper">
+    <div class="top-page-banner-container">
+    </div>
+</div>
+
+<section class="container">
+    <div class="content-wrapper-cv z-depth-5">
+        <span class="right"><a class="btn btn-small waves-effect waves-light black-text" title="RSS Feed"
+                               href="{{ '/feed.xml' | relative_url }}"><i
+                        class="material-icons black-text">rss_feed</i></a></span>
+        <div class="home content-wrapper-cv-inner">
+
+            <h1 class="page-heading amber-text text-lighten-3">{{ page.title | escape }}</h1>
+
+            {{ content }}
+
+            <div class="top-margin">
+                {%- if site.posts.size > 0 -%}
+                <ul class="post-list">
+                    {%- for post in site.posts -%}
+                    <li class="post-list-item">
+                        <div class="row post-excerpt-container">
+                            <div class="col s12 l6 grey darken-4">
+                                <div class="post-excerpt-header">
+                                    <h3>
+                                        <a class="post-link" href="{{ post.url | relative_url }}">
+                                            {{ post.title | escape }}
+                                        </a>
+                                    </h3>
+                                    <i class="tiny material-icons">access_time</i>
+                                    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                                    <span class="post-meta"> {{ post.date | date: date_format }}</span>
+                                </div>
+                            </div>
+                            <div class="col s12 l6">
+                                <div class="post-excerpt-body">
+                                    {%- if site.show_excerpts -%}
+                                    {{ post.excerpt }}
+                                    {%- endif -%}
+                                    <a class="p" href="{{ post.url | relative_url }}">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <div class="hide-on-med-and-up">
+                        <div class="spacer-mobile"></div>
+                    </div>
+                    {%- endfor -%}
+                </ul>
+
+                {%- endif -%}
+            </div>
+
+        </div>
+
+    </div>
+</section>
