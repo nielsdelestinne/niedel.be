@@ -180,6 +180,11 @@ ul, ol {
   padding-left: 0;
 }
 
+.flex-inner {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .flex {
   display: flex;
   flex-wrap: wrap;
