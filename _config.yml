@@ -21,7 +21,7 @@
 title: Niels Delestinne
 email: hello@niedel.be
 description: >- # this means to ignore newlines until "baseurl:"
-  A full-stack software developer and tech lead with active professional knowledge on Java, Angular and both of their entire ecosystems. A true believer of software craftsmanship and the eXtreme Programming practices. Strives to write readable, flexible and simple code that is properly tested. Aims to create maintainable and flexible applications in team. Embraces and enjoys continuous learning. Coaches and tries to inspire. Considers both operational as non-operational requirements in his designs. Creative & friendly.
+  An experienced Belgian freelance full-stack software developer & tech lead passionate about delivering quality software.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://nieldel.be" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  nielsdelestinne

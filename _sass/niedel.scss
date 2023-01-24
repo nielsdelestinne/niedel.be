@@ -186,7 +186,7 @@ ul, ol {
 }
 
 .flex-element {
-  flex: 1;
+  flex: 1 1 250px;
 }
 
 .badge {
@@ -226,6 +226,10 @@ progress[value]::-webkit-progress-value {
   $margin: 3rem;
   $padding: 3rem;
 
+  .flex {
+    gap: 0 $margin;
+  }
+
   .padding-right-half {
     padding-right: $padding / 2;
   }
@@ -245,7 +249,7 @@ progress[value]::-webkit-progress-value {
 
   .languages {
     padding: $padding;
-    margin: $margin $margin $margin 0;
+    margin: $margin 0 0 0;
   }
 
   .languages:last-of-type {
@@ -332,6 +336,10 @@ progress[value]::-webkit-progress-value {
   $margin: 1rem;
   $padding: 1rem;
 
+  .flex {
+    gap: 0 $margin;
+  }
+
   .padding-right-half {
     padding-right: $padding / 2;
   }
@@ -351,7 +359,7 @@ progress[value]::-webkit-progress-value {
 
   .languages {
     padding: $padding;
-    margin: $margin 0 $margin 0;
+    margin: $margin 0 0 0;
   }
 
   .container {
