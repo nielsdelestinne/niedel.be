@@ -24,7 +24,7 @@ h5 {
   font-size: x-large;
 }
 
-.education, .learning, .languages {
+.education, .learning, .languages, .home-element {
   @extend .blue-grey, .darken-3;
 }
 
@@ -42,7 +42,7 @@ h5 {
   max-height: 150px;
 }
 
-p, .cv-details {
+p, .cv-details, .home-details {
   @extend .p;
 }
 
@@ -67,7 +67,7 @@ hr.fade {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
 }
 
-.content-wrapper, .content-wrapper-cv {
+.content-wrapper, .content-wrapper-cv, .content-wrapper-home {
   @extend .blue-grey, .darken-4 !optional;
 }
 
@@ -167,7 +167,7 @@ hr.fade {
   height: 2rem;
 }
 
-.single-page > p > img, .cv img {
+.single-page > p > img, .cv img, .home img {
   @extend .responsive-img, .circle;
 }
 
@@ -243,16 +243,16 @@ progress[value]::-webkit-progress-value {
     margin: ($margin / 1.5) 0 ($margin / 1.5) 0;
   }
 
-  .cv-details {
+  .cv-details, .home-details {
     margin: $margin / 2 0 $margin /2  0;
   }
 
-  .languages, .education, .learning {
+  .languages, .education, .learning, .home-element {
     padding: $padding;
     margin: $margin 0 0 0;
   }
 
-  .languages:last-of-type {
+  .languages:last-of-type, .home-element:last-of-type {
     margin-right: 0;
   }
 
@@ -261,7 +261,7 @@ progress[value]::-webkit-progress-value {
     float: right;
   }
 
-  .cv img {
+  .cv img, .home img {
     max-width: 175px;
   }
 
@@ -275,11 +275,11 @@ progress[value]::-webkit-progress-value {
     margin: $margin;
   }
 
-  .content-wrapper-cv {
+  .content-wrapper-cv, .content-wrapper-home {
     margin: $margin;
   }
 
-  .content-wrapper-cv-inner {
+  .content-wrapper-cv-inner, .content-wrapper-home-inner {
     padding: $padding;
   }
 
@@ -348,11 +348,11 @@ progress[value]::-webkit-progress-value {
     margin: $margin 0 $margin 0;
   }
 
-  .cv-details {
+  .cv-details, .home-details {
     margin: $margin / 2 0 $margin /2  0;
   }
 
-  .languages, .education, .learning {
+  .languages, .education, .learning, .home-element {
     padding: $padding;
     margin: $margin 0 0 0;
   }
@@ -396,7 +396,7 @@ progress[value]::-webkit-progress-value {
     margin: $margin;
   }
 
-  .cv img {
+  .cv img, .home img {
     width: 175px;
     float: none !important;
     text-align: center !important;
@@ -405,11 +405,11 @@ progress[value]::-webkit-progress-value {
     display: block;
   }
 
-  .content-wrapper-cv {
+  .content-wrapper-cv, .content-wrapper-home {
     margin: $margin;
   }
 
-  .content-wrapper-cv-inner {
+  .content-wrapper-cv-inner, .content-wrapper-home-inner {
     padding: $padding;
   }
 

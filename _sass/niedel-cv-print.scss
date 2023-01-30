@@ -100,11 +100,11 @@
     margin: 0 0 $margin * 3 0;
   }
 
-  .content-wrapper-cv {
+  .content-wrapper-cv, .content-wrapper-home {
     margin: 0 0 $margin * 3 0;
   }
 
-  .content-wrapper-cv-inner {
+  .content-wrapper-cv-inner, .content-wrapper-home-inner {
     padding: 0;
     margin: 0;
   }
@@ -127,7 +127,7 @@
     margin-top: $margin * 3 !important;
   }
 
-  .languages {
+  .languages, .home-element {
     margin: $margin 0 0 0 !important;
     padding: 0 !important;
   }
@@ -155,11 +155,11 @@
     padding-right: $padding;
   }
 
-  .cv-details {
+  .cv-details, .home-details {
     margin: $margin / 2 0 $margin /2 0;
   }
 
-  .languages:last-of-type {
+  .languages:last-of-type, .home-element:last-of-type {
     margin-right: 0;
   }
 
