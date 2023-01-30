@@ -142,6 +142,11 @@
     padding: 0 !important;
   }
 
+  .education:first-child {
+    margin: $margin * 2 0 0 0 !important;
+    padding: 0 $padding 0 0 !important;
+  }
+
   .education-section {
     padding: $padding * 3 0 0 0 !important;
   }
