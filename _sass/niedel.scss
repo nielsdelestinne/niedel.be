@@ -247,12 +247,7 @@ progress[value]::-webkit-progress-value {
     margin: $margin / 2 0 $margin /2  0;
   }
 
-  .education, .learning {
-    padding: $padding;
-    margin: $margin 0 $margin 0;
-  }
-
-  .languages {
+  .languages, .education, .learning {
     padding: $padding;
     margin: $margin 0 0 0;
   }
@@ -357,12 +352,7 @@ progress[value]::-webkit-progress-value {
     margin: $margin / 2 0 $margin /2  0;
   }
 
-  .education, .learning {
-    padding: $padding;
-    margin: $margin;
-  }
-
-  .languages {
+  .languages, .education, .learning {
     padding: $padding;
     margin: $margin 0 0 0;
   }
