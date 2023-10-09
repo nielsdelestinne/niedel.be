@@ -7,7 +7,7 @@ categories: back-end PostgreSQL Flyway
 comments: false
 ---
 
-Anyone who has worked on an application involving persistent data knows how challenging data migrations can be. They're not only difficult to write but also crucial to execute flawlessly. This article explores a test-first approach to tackle this challenge.
+Anyone who has worked on an application involving persistent data knows how challenging data migrations can be. They're difficult to write and crucial to execute flawlessly. This article explores a test-first approach to tackle this challenge.
 
 <!--more-->
 
