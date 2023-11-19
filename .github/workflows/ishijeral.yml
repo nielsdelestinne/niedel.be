@@ -5,7 +5,7 @@ on:
 
 jobs:
   deploy:
-    name: Build and Deploy
+    name: Is hij er al
     runs-on: ubuntu-latest
 
     steps:
