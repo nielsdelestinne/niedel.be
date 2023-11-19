@@ -7,7 +7,7 @@ categories: java api json
 comments: false
 ---
 
-It is often too easy to break API compatibility when using JSON as the data-interchange format. In an 
+It is often too easy to break API compatibility when using JSON. In an 
 application landscape where we have many producing applications and even more consuming applications, 
 it's vital to enforce and assert API compatibility.
 
