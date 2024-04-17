@@ -1,0 +1,33 @@
+name: Build and Deploy
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    name: Is hij er al
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Build
+        uses: nielsdelestinne/jekyll-build@v1.0.0
+        with:
+          verbose: true
+
+      - name: Save Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: ishijeral
+          path: ishijeral
+
+      - name: Deploy using FTP
+        uses: sebastianpopp/ftp-action@releases/v2
+        with:
+          host: ${{ secrets.FTP_SERVER }}
+          user: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          localDir: "ishijeral"
+          remoteDir: "/public_html/ishijeral"
