@@ -28,6 +28,11 @@
     color: black !important;;
   }
 
+  .flow-text {
+    font-size: large;
+  }
+
+
   .amber-text, .material-icons, .amber-text.text-lighten-3, .text-lighten-3, a {
     color: $print-color !important;
   }
@@ -73,12 +78,13 @@
   progress[value] {
     /* Reset the default appearance */
     -webkit-appearance: none;
+    -moz-appearance: none;
     appearance: none;
     width: 100%;
     max-height: 15px;
   }
 
-  progress[value]::-webkit-progress-bar {
+  progress[value]::-webkit-progress-bar, progress[value]::-moz-progress-bar {
     background-color: #000000 !important;
     border-radius: 2px;
     border: 0.5px dashed #555555;
@@ -107,6 +113,10 @@
   .content-wrapper-cv-inner, .content-wrapper-home-inner {
     padding: 0;
     margin: 0;
+  }
+
+  .column-to-row {
+    margin-top: $margin * 3;
   }
 
   .col.s12 {
