@@ -46,6 +46,10 @@ h5 {
   font-size: large;
 }
 
+.blog-title {
+  font-size: xxx-large;
+}
+
 .flow-text {
   font-size: x-large;
 }
@@ -57,6 +61,10 @@ h5 {
 .post-content > h3 {
   @extend .amber-text, .text-lighten-3 !optional;
   font-size: x-large;
+}
+
+.post-header {
+  @extend .grey, .darken-4;
 }
 
 .p {
@@ -93,7 +101,7 @@ hr.fade {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
 }
 
-.content-wrapper, .content-wrapper-cv, .content-wrapper-home {
+.article-wrapper, .content-wrapper, .content-wrapper-cv, .content-wrapper-home {
   @extend .blue-grey, .darken-4 !optional;
 }
 
@@ -128,11 +136,11 @@ hr.fade {
   list-style-type: none;
 }
 
-.post-title {
+.cv-title {
   @extend .amber-text, .text-lighten-3 !optional;
 }
 
-.post-link {
+.post-link, .post-title {
   background: linear-gradient(to right, #ffe082, #ffb167, #ff7a70, #ff4392, #cf2ec1);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -168,6 +176,14 @@ hr.fade {
 
 .no-margin-bottom {
   margin-bottom: 0 !important;
+}
+
+.no-margin-top {
+  margin-bottom: 0 !important;
+}
+
+.no-padding-top {
+  padding-top: 0 !important;
 }
 
 .no-padding-bottom {
@@ -262,8 +278,16 @@ progress[value]::-webkit-progress-value {
     gap: 0 $margin;
   }
 
+  .post-header {
+    margin-top: $margin;
+  }
+
   .padding-right-half {
     padding-right: $padding / 2;
+  }
+
+  .padding {
+    padding: $padding;
   }
 
   p {
@@ -367,6 +391,18 @@ progress[value]::-webkit-progress-value {
     gap: 0 $margin;
   }
 
+  .blog-title {
+    font-size: xx-large;
+  }
+
+  .post-header {
+    margin-top: $margin;
+  }
+
+  .padding {
+    padding: $padding;
+  }
+
   .padding-right-half {
     padding-right: $padding / 2;
   }
@@ -393,7 +429,7 @@ progress[value]::-webkit-progress-value {
     padding: 0;
   }
 
-  .post-title {
+  .cv-title, .post-title {
     font-size: 3em;
   }
 
@@ -424,12 +460,8 @@ progress[value]::-webkit-progress-value {
   }
 
   .cv img, .home img {
-    width: 175px;
-    float: none !important;
-    text-align: center !important;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+    display: none;
+
   }
 
   .content-wrapper-cv, .content-wrapper-home {
