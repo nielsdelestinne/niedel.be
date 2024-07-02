@@ -101,7 +101,7 @@ hr.fade {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
 }
 
-.article-wrapper, .content-wrapper, .content-wrapper-cv, .content-wrapper-home {
+.article-wrapper, .content-wrapper, .content-wrapper-cv, .content-wrapper-home, .content-wrapper-post {
   @extend .blue-grey, .darken-4 !optional;
 }
 
@@ -290,7 +290,7 @@ progress[value]::-webkit-progress-value {
     padding: $padding;
   }
 
-  p {
+  p, ul {
     margin: ($margin / 1.5) 0 ($margin / 1.5) 0;
   }
 
@@ -326,12 +326,16 @@ progress[value]::-webkit-progress-value {
     margin: $margin;
   }
 
-  .content-wrapper-cv, .content-wrapper-home {
+  .content-wrapper-cv, .content-wrapper-home, .content-wrapper-post {
     margin: $margin;
   }
 
   .content-wrapper-cv-inner, .content-wrapper-home-inner {
     padding: $padding;
+  }
+
+  .content-wrapper-post-inner {
+    padding: $padding/2 $padding $padding $padding;
   }
 
   h1 {
@@ -407,7 +411,7 @@ progress[value]::-webkit-progress-value {
     padding-right: $padding / 2;
   }
 
-  p {
+  p, ul {
     margin: $margin 0 $margin 0;
   }
 
@@ -430,7 +434,7 @@ progress[value]::-webkit-progress-value {
   }
 
   .cv-title, .post-title {
-    font-size: 3em;
+    font-size: 2em;
   }
 
   hr.fade {
@@ -464,12 +468,16 @@ progress[value]::-webkit-progress-value {
 
   }
 
-  .content-wrapper-cv, .content-wrapper-home {
+  .content-wrapper-cv, .content-wrapper-home, .content-wrapper-post {
     margin: $margin;
   }
 
   .content-wrapper-cv-inner, .content-wrapper-home-inner {
     padding: $padding;
+  }
+
+  .content-wrapper-post-inner {
+    padding: $padding/2 $padding $padding $padding;
   }
 
   .post-list-heading {
