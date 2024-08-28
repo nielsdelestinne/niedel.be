@@ -666,7 +666,8 @@ progress[value]::-webkit-progress-value {
 
   // Generic.Traceback
   .kc {
-    font-weight: normal
+    font-weight: normal;
+    color: #099
   }
 
   // Keyword.Constant
@@ -703,6 +704,10 @@ progress[value]::-webkit-progress-value {
   // Literal.String
   .na {
     color: #ffffff
+  }
+
+  .nx {
+    color: #ffda79
   }
 
   // Name.Attribute
@@ -785,42 +790,42 @@ progress[value]::-webkit-progress-value {
 
   // Literal.Number.Oct
   .sb {
-    color: #d14
+    color: #ffda79
   }
 
   // Literal.String.Backtick
   .sc {
-    color: #d14
+    color: #ffda79
   }
 
   // Literal.String.Char
   .sd {
-    color: #d14
+    color: #ffda79
   }
 
   // Literal.String.Doc
   .s2 {
-    color: #d14
+    color: #ffda79
   }
 
   // Literal.String.Double
   .se {
-    color: #d14
+    color: #ffda79
   }
 
   // Literal.String.Escape
   .sh {
-    color: #d14
+    color: #ffda79
   }
 
   // Literal.String.Heredoc
   .si {
-    color: #d14
+    color: #ffda79
   }
 
   // Literal.String.Interpol
   .sx {
-    color: #d14
+    color: #ffda79
   }
 
   // Literal.String.Other
@@ -830,7 +835,7 @@ progress[value]::-webkit-progress-value {
 
   // Literal.String.Regex
   .s1 {
-    color: #d14
+    color: #ffda79
   }
 
   // Literal.String.Single
