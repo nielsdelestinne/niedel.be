@@ -184,7 +184,7 @@ All of these were applied to our solution above.
 
 _Furthermore, compared to decorator-based @Input, signal inputs provide numerous benefits:_
 
-- _Signal inputs are more type-s_afe: required inputs do not require initial values or tricks to tell TypeScript that an input always has a value. Furthermore, transforms are automatically checked to match the accepted input values._
+- _Signal inputs are more type-safe: required inputs do not require initial values or tricks to tell TypeScript that an input always has a value. Furthermore, transforms are automatically checked to match the accepted input values._
 - _Signal inputs, when used in templates, will automatically mark OnPush components as dirty._
 - _Values can be easily derived whenever an input changes using `computed`._
 - _Easier and more localized monitoring of inputs using `effect` instead of `ngOnChanges` or setters._
@@ -238,7 +238,7 @@ export class ActivePowerIndicatorComponent {
 
 ## Conclusion
 
-while both `@Input()` decorators and Signal inputs effectively handle data binding in Angular, and all presented solutions in this article provide the same behavior, Signals offer a more reactive and streamlined approach. 
+While both `@Input()` decorators and Signal inputs effectively handle data binding in Angular, and all presented solutions in this article provide the same behavior, Signals offer a more reactive and streamlined approach. 
 
 `@Input()` decorators, whether using setters or transform functions, are familiar and versatile. Signals, on the other hand, provide stronger type safety, automatic change detection, and can be considered as a step forward. 
 
