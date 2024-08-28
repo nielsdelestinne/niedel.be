@@ -11,6 +11,8 @@ Snuyster helps to understand large-scale software systems by looking at their ev
 
 <!--more-->
 
+You can find Snuyster at [github.com/nielsdelestinne/snuyster](https://github.com/nielsdelestinne/snuyster).
+
 ## Your code as a Crime Scene
 
 It's been a while since I have read Adam Thornhill's book "Your Code as a Crime Scene" and used its accompanying tool "code-maat". However, when I recently joined a new project, I revisited the book and its practices and applied them to the customer's application landscape.
@@ -83,6 +85,6 @@ docker run \
 
 Feel free to use Snuyster how you see fit, hopefully you'll find it useful.
 
-You can find Snuyster at https://github.com/nielsdelestinne/snuyster.
+You can find Snuyster at [github.com/nielsdelestinne/snuyster](https://github.com/nielsdelestinne/snuyster).
 
 If you have any questions, remarks or requests regarding Snuyster, please interact via the GitHub repository.
