@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Comparing @Input() with the new Signal input in Angular"
+title:  "Comparing @Input with the new Signal input in Angular"
 date:   2024-08-28
 author: "Niels Delestinne"
 categories: angular signal input
@@ -8,7 +8,7 @@ comments: false
 ---
 
 Angular has been receiving a steady stream of new and interesting features over recent years. One of those is Signals, an optimized system that tracks how and where the state is used.
-In this article, we will look at how Signals can be used as inputs and compare them with other approaches using the @Input() decorator.
+In this article, we will look at how Signals can be used as inputs and compare them with other approaches using the @Input decorator.
 
 <!--more-->
 
@@ -31,9 +31,9 @@ We will create a new component that does the following:
 > A pure pipe would be a better and more performant fit for this simplistic extension to the application.
 > However, for the sake of the article and for what we're trying to demonstrate, we will make use of a component.
 
-## @Input() decorator and set property
+## @Input decorator and set property
 
-We start by using the `@Input()` decorator combined with a set property (setter).
+We start by using the `@Input` decorator combined with a set property (setter).
 
 {% highlight javascript %}
 import {ChangeDetectionStrategy, Component, Input} from '@angular/core';
@@ -68,9 +68,9 @@ _The template code snippet shown above will remain identical in the subsequent s
 Although this approach correctly updates and renders the indicator every second, it's not the most elegant solution.
 The setter property forces us to introduce a non-private field `activePowerIndicator`. We can do better.
 
-## @Input() decorator with transform function
+## @Input decorator with transform function
 
-We rework our previous solution by providing a `transform` function to the `@Input()` decorator.
+We rework our previous solution by providing a `transform` function to the `@Input` decorator.
 
 {% highlight javascript %}
 import {ChangeDetectionStrategy, Component, Input} from '@angular/core';
@@ -92,11 +92,11 @@ function toIndicator(activePowerValue: number): string {
 
 ### Observations
 
-While this solution leverages the built-in transform functionality of `@Input()`, there are some drawbacks.
+While this solution leverages the built-in transform functionality of `@Input`, there are some drawbacks.
 
-For starters, the type the `@Input()` decorator accepts (`number`) is defined in the `transform` function, not in the declaration of the `@Input()` decorated field (`string`). This is counterintuitive.
+For starters, the type the `@Input` decorator accepts (`number`) is defined in the `transform` function, not in the declaration of the `@Input` decorated field (`string`). This is counterintuitive.
 
-Additionally, the @Input() field activePower takes a numerical value in kWh, but in the template, we display an indicator (orb), not the actual value.
+Additionally, the `@Input` decorated field activePower takes a numerical value in kWh, but in the template, we display an indicator (orb), not the actual value.
 
 - This distinction isn't clear in the code because activePower is used for both the raw value and its transformed indicator.
 
@@ -149,7 +149,7 @@ In comparing the setter with the transform function, the transform function is o
 
 ## Signal input
 
-We replace the `@Input()` decorated field with a Signal input and make use of the Signal input's transformation method support.
+We replace the `@Input` decorated field with a Signal input and make use of the Signal input's transformation method support.
 
 {% highlight javascript %}
 import {ChangeDetectionStrategy, Component, input} from '@angular/core';
@@ -174,15 +174,15 @@ export class ActivePowerIndicatorComponent {
 
 ### Observations
 
-As with `@Input()` decorated input, we can...
+As with `@Input` decorated input, we can...
 
 - enforce that an input value is required.
 - provide an alias if desired.
-- provide a transform. However, for Signal inputs, you provide an (instance) method instead of a function.
+- provide a transform. And, in addition to a function or lambda, a (instance) method can be used.
 
 All of these were applied to our solution above.
 
-_Furthermore, compared to decorator-based @Input, signal inputs provide numerous benefits:_
+_Furthermore, compared to decorator-based `@Input`, signal inputs provide numerous benefits:_
 
 - _Signal inputs are more type-safe: required inputs do not require initial values or tricks to tell TypeScript that an input always has a value. Furthermore, transforms are automatically checked to match the accepted input values._
 - _Signal inputs, when used in templates, will automatically mark OnPush components as dirty._
@@ -193,7 +193,7 @@ _The excerpt above is taken from [the official Angular Signal guide](https://ang
 
 ## Signal input with transformation pipe
 
-A Signal input accepts an instance method instead of a function for its transformer. This opens up the possibility to inject and reuse an existing pipe.
+A Signal input allows using an instance method as its transformer. This opens up the possibility to inject and reuse an existing pipe.
 
 - _Although pure pipes come with performance optimizations, there are none to be gained in this simplistic use case._
 
@@ -238,8 +238,8 @@ export class ActivePowerIndicatorComponent {
 
 ## Conclusion
 
-While both `@Input()` decorators and Signal inputs effectively handle data binding in Angular, and all presented solutions in this article provide the same behavior, Signals offer a more reactive and streamlined approach. 
+While both `@Input` decorators and Signal inputs effectively handle data binding in Angular, and all presented solutions in this article provide the same behavior, Signals offer a more reactive and streamlined approach. 
 
-`@Input()` decorators, whether using setters or transform functions, are familiar and versatile. Signals, on the other hand, provide stronger type safety, automatic change detection, and can be considered as a step forward. 
+`@Input` decorators, whether using setters or transform functions, are familiar and versatile. Signals, on the other hand, provide stronger type safety, automatic change detection, and can be considered as a step forward. 
 
-For inputs, Signals represent a cleaner, more modern alternative to the traditional `@Input()` decorator, making them your default option on (future) projects.
+For inputs, Signals represent a cleaner, more modern alternative to the traditional `@Input` decorator, making them your default option on (future) projects.
