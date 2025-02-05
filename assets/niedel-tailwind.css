@@ -708,6 +708,15 @@
   .basis-1\/3 {
     flex-basis: calc(1/3 * 100%);
   }
+  .basis-1\/4 {
+    flex-basis: calc(1/4 * 100%);
+  }
+  .basis-2 {
+    flex-basis: calc(var(--spacing) * 2);
+  }
+  .basis-2\/4 {
+    flex-basis: calc(2/4 * 100%);
+  }
   .basis-3 {
     flex-basis: calc(var(--spacing) * 3);
   }
@@ -803,12 +812,6 @@
   .scale-\[1\.00\] {
     scale: 1.00;
   }
-  .scale-\[1\.2\] {
-    scale: 1.2;
-  }
-  .scale-\[1\.015\] {
-    scale: 1.015;
-  }
   .scale-\[1\.01\] {
     scale: 1.01;
   }
@@ -817,6 +820,12 @@
   }
   .scale-\[1\.02\] {
     scale: 1.02;
+  }
+  .scale-\[1\.2\] {
+    scale: 1.2;
+  }
+  .scale-\[1\.015\] {
+    scale: 1.015;
   }
   .scale-\[1\.0125\] {
     scale: 1.0125;
@@ -894,6 +903,9 @@
   }
   .justify-center {
     justify-content: center;
+  }
+  .justify-evenly {
+    justify-content: space-evenly;
   }
   .justify-start {
     justify-content: flex-start;
@@ -1212,6 +1224,12 @@
   .text-gray-300 {
     color: var(--color-gray-300);
   }
+  .text-rose-200 {
+    color: var(--color-rose-200);
+  }
+  .text-rose-400 {
+    color: var(--color-rose-400);
+  }
   .italic {
     font-style: italic;
   }
@@ -1263,6 +1281,10 @@
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
+  .duration-100 {
+    --tw-duration: 100ms;
+    transition-duration: 100ms;
+  }
   .duration-300 {
     --tw-duration: 300ms;
     transition-duration: 300ms;
@@ -1276,6 +1298,43 @@
   }
   .perspective-normal {
     perspective: var(--perspective-normal);
+  }
+  .hover\:scale-105 {
+    &:hover {
+      @media (hover: hover) {
+        --tw-scale-x: 105%;
+        --tw-scale-y: 105%;
+        --tw-scale-z: 105%;
+        scale: var(--tw-scale-x) var(--tw-scale-y);
+      }
+    }
+  }
+  .hover\:scale-110 {
+    &:hover {
+      @media (hover: hover) {
+        --tw-scale-x: 110%;
+        --tw-scale-y: 110%;
+        --tw-scale-z: 110%;
+        scale: var(--tw-scale-x) var(--tw-scale-y);
+      }
+    }
+  }
+  .hover\:scale-120 {
+    &:hover {
+      @media (hover: hover) {
+        --tw-scale-x: 120%;
+        --tw-scale-y: 120%;
+        --tw-scale-z: 120%;
+        scale: var(--tw-scale-x) var(--tw-scale-y);
+      }
+    }
+  }
+  .hover\:text-amber-300 {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-amber-300);
+      }
+    }
   }
   .hover\:underline {
     &:hover {

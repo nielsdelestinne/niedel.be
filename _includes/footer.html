@@ -1,23 +1,23 @@
 <footer class="w-full">
     <section class="bg-gray-900 shadow-lg p-2 md:p-5">
-        <div class="container mx-auto px-6 py-4 flex flex-row">
-            <div class="basis-1/3">
-                <h3 class="text-lg font-bold text-amber-200 mb-2">Niels Delestinne</h3>
-                <p>{{- site.description | escape -}}</p>
+        <div class="container mx-auto px-6 py-4 flex flex-row gap-15">
+            <div class="basis-2/4">
+                <h3 class="text-lg font-bold text-gray-300 mb-2">Niels Delestinne</h3>
+                <p class="text-lg">{{- site.description | escape -}}</p>
             </div>
-            <div class="basis-1/3">
-                <h3 class="text-lg font-bold text-amber-200 mb-2">Navigation</h3>
+            <div class="basis-1/4">
+                <h3 class="text-lg font-bold text-gray-300 mb-2">Navigation</h3>
                 <ul>
                     {%- for path in page_paths -%}
                     {%- assign my_page = site.pages | where: "path", path | first -%}
                     {%- if my_page.title -%}
-                    <li><a href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a></li>
+                    <li><a href="{{ my_page.url | relative_url }}" class="text-amber-200 hover:underline">{{ my_page.title | escape }}</a></li>
                     {%- endif -%}
                     {%- endfor -%}
                 </ul>
             </div>
-            <div class="basis-1/3">
-                <h3 class="text-lg font-bold text-amber-200 mb-2">Find me on</h3>
+            <div class="basis-1/4">
+                <h3 class="text-lg font-bold text-gray-300 mb-2">Find me on</h3>
                 {%- include social.html -%}
             </div>
         </div>
