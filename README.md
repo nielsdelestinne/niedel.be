@@ -12,3 +12,12 @@ Niels Delestinne (niedel) - Website.
    - Linux: `docker run --rm -v "$PWD:/srv/jekyll" -p 4000:4000/tcp -p 35729:35729/tcp -it jekyll/jekyll:4.2.0 jekyll serve --incremental --livereload`
 2. Navigate to [http://localhost:4000](http://localhost:4000) to access the website
 3. It will watch for changes, rebuild the site, and provide access through its included web server. You can then check the results of changes by reloading http://localhost:4000/ in a browser.
+
+## Tailwind
+
+Installed via `npm install tailwindcss @tailwindcss/cli`
+
+See https://tailwindcss.com/docs/installation
+- Treeshakes based on `tailwind.config.js` and `content` block.
+
+Run `npx @tailwindcss/cli -i ./tailwind.css -o ./assets/niedel-tailwind.css --watch` to rebuild css.

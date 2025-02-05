@@ -1,41 +1,26 @@
-<header class="site-header" role="banner">
+<header class="bg-gray-900 shadow-lg p-5 md:p-10">
 
-    <div class="wrapper">
-        {%- assign pages_ordered = site.pages | sort: "order" -%}
-        {%- assign default_paths = pages_ordered | map: "path" -%}
-        {%- assign page_paths = site.header_pages | default: default_paths -%}
+    {%- assign pages_ordered = site.pages | sort: "order" -%}
+    {%- assign default_paths = pages_ordered | map: "path" -%}
+    {%- assign page_paths = site.header_pages | default: default_paths -%}
 
-        {%- if page_paths -%}
+    {%- if page_paths -%}
 
-        <nav class="navbar-fixed">
-            <div class="nav-wrapper container">
-                <div class="nav-inner-content">
-                    <a href="#" data-target="nav-mobile" class="sidenav-trigger left amber-text text-lighten-3"><i class="material-icons">menu</i></a>
-                    <a class="brand-logo"rel="author" href="{{ '/' | relative_url }}">
-                        <span>niels</span><span>.</span><span class="amber-text text-lighten-3">delestinne</span><span>()</span><span class="amber-text text-lighten-3">;</span>
-                    </a>
-                    <ul class="right hide-on-med-and-down">
-                        {%- for path in page_paths -%}
-                        {%- assign my_page = pages_ordered | where: "path", path | first -%}
-                        {%- if my_page.title -%}
-                        <li><a href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a></li>
-                        {%- endif -%}
-                        {%- endfor -%}
-
-                    </ul>
-                </div>
+    <nav class="container mx-auto">
+        <div class="flex items-center justify-between">
+            <div class="text-xl font-bold text-amber-200">Niels Delestinne</div>
+            <div class="hidden md:flex space-x-6">
+                {%- for path in page_paths -%}
+                {%- assign my_page = pages_ordered | where: "path", path | first -%}
+                {%- if my_page.title -%}
+                <a href="{{ my_page.url | relative_url }}" class="text-amber-200 hover:underline">{{ my_page.title |
+                    escape }}</a>
+                {%- endif -%}
+                {%- endfor -%}
             </div>
-        </nav>
+        </div>
+    </nav>
 
-        <ul class="sidenav grey darken-4" id="nav-mobile">
-            {%- for path in page_paths -%}
-            {%- assign my_page = pages_ordered | where: "path", path | first -%}
-            {%- if my_page.title -%}
-            <li><a class="waves-effect waves-light btn amber lighten-3 grey-text text-darken-4" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a></li>
-            {%- endif -%}
-            {%- endfor -%}
-        </ul>
-        {%- endif -%}
+    {%- endif -%}
 
-    </div>
 </header>
