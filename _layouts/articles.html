@@ -2,60 +2,48 @@
 layout: default
 ---
 
-<div class="top-page-banner-wrapper">
-    <div class="top-page-banner-container">
+<div class="container mx-auto flex flex-row flex-wrap gap-15 lg:gap-30">
+    <div class="basis-3/3 shadow-2xl shadow-gray-950 p-10 bg-gray-800 flex flex-col lg:flex-row gap-5 lg:gap-15">
+        <section class="text-center lg:text-left">
+            <header class="w-full flex flex-row content-start items-center sm:max-lg:justify-center ">
+                <h1 class="text-6xl font-bold text-amber-200">{{ page.title | escape }}</h1>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                     class="ml-5 size-12 text-amber-200">
+                    <path d="M11.25 4.533A9.707 9.707 0 0 0 6 3a9.735 9.735 0 0 0-3.25.555.75.75 0 0 0-.5.707v14.25a.75.75 0 0 0 1 .707A8.237 8.237 0 0 1 6 18.75c1.995 0 3.823.707 5.25 1.886V4.533ZM12.75 20.636A8.214 8.214 0 0 1 18 18.75c.966 0 1.89.166 2.75.47a.75.75 0 0 0 1-.708V4.262a.75.75 0 0 0-.5-.707A9.735 9.735 0 0 0 18 3a9.707 9.707 0 0 0-5.25 1.533v16.103Z"/>
+                </svg>
+            </header>
+            <main class="text-3xl lg:text-4xl text-gray-300 mt-8">
+                {{ content }}
+            </main>
+        </section>
     </div>
+
+
+    {%- if site.posts.size > 0 -%}
+    {%- for post in site.posts -%}
+    <div class="basis-3/3 shadow-2xl shadow-gray-950 bg-gray-800 relative">
+        <div class="w-full h-40 bg-gradient-to-r from-amber-200 to-rose-400/75 absolute -z-10 scale-[1.0125] -translate-y-1 lg:-translate-y-2.5"></div>
+        <section class="text-left flex flex-col lg:flex-row content-start items-stretch">
+            <header class=" w-full lg:min-w-3/5 bg-gray-900 flex items-center p-10 lg:p-20">
+                <div class="flex flex-col">
+                    <a class="text-4xl lg:text-5xl font-bold text-amber-200 hover:underline" href="{{ post.url | relative_url }}">
+                        {{ post.title | escape }}
+                    </a>
+                    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                    <span class="text-lg font-bold text-gray-300 mt-5"> {{ post.date | date: date_format }}</span>
+                </div>
+            </header>
+            <main class="p-10 lg:p-20">
+                <div class="text-xl text-gray-300">
+                    {%- if site.show_excerpts -%}
+                    {{ post.excerpt }}
+                    {%- endif -%}
+                    <a class="text-amber-200 hover:underline" href="{{ post.url | relative_url }}">Read more...</a>
+                </div>
+            </main>
+        </section>
+    </div>
+    {%- endfor -%}
+    {%- endif -%}
+
 </div>
-
-<section class="container">
-    <div class="content-wrapper-cv z-depth-5">
-        <span class="right"><a class="btn btn-small waves-effect waves-light black-text" title="RSS Feed"
-                               href="{{ '/feed.xml' | relative_url }}"><i
-                        class="material-icons black-text">rss_feed</i></a></span>
-        <div class="home content-wrapper-cv-inner">
-
-            <h1 class="page-heading amber-text text-lighten-3">{{ page.title | escape }}</h1>
-
-            {{ content }}
-
-            <div class="top-margin">
-                {%- if site.posts.size > 0 -%}
-                <ul class="post-list">
-                    {%- for post in site.posts -%}
-                    <li class="post-list-item">
-                        <div class="row post-excerpt-container">
-                            <div class="col s12 l6 grey darken-4">
-                                <div class="post-excerpt-header">
-                                    <h3 class="blog-title">
-                                        <a class="post-link" href="{{ post.url | relative_url }}">
-                                            {{ post.title | escape }}
-                                        </a>
-                                    </h3>
-                                    <i class="tiny material-icons">access_time</i>
-                                    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-                                    <span class="post-meta"> {{ post.date | date: date_format }}</span>
-                                </div>
-                            </div>
-                            <div class="col s12 l6">
-                                <div class="post-excerpt-body">
-                                    {%- if site.show_excerpts -%}
-                                    {{ post.excerpt }}
-                                    {%- endif -%}
-                                    <a class="p" href="{{ post.url | relative_url }}">Read more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <div class="hide-on-med-and-up">
-                        <div class="spacer-mobile"></div>
-                    </div>
-                    {%- endfor -%}
-                </ul>
-
-                {%- endif -%}
-            </div>
-
-        </div>
-
-    </div>
-</section>
