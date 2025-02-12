@@ -2,898 +2,467 @@
 layout: default
 ---
 
-<div class="top-page-banner-wrapper">
-    <div class="top-page-banner-container">
+<div class="container mx-auto flex flex-row flex-wrap gap-15 lg:gap-30">
+    <div class="basis-3/3 shadow-2xl shadow-gray-950 p-10 bg-gray-800 flex flex-col lg:flex-row gap-5 lg:gap-15">
+        <section class="basis-5/6 text-center lg:text-left">
+            <header class="w-full flex flex-row content-start items-center sm:max-lg:justify-center ">
+                <h1 class="text-6xl font-bold text-amber-200">Niels Delestinne</h1>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                     class="ml-5 size-12 text-amber-200">
+                    <path fill-rule="evenodd"
+                          d="M5.625 1.5c-1.036 0-1.875.84-1.875 1.875v17.25c0 1.035.84 1.875 1.875 1.875h12.75c1.035 0 1.875-.84 1.875-1.875V12.75A3.75 3.75 0 0 0 16.5 9h-1.875a1.875 1.875 0 0 1-1.875-1.875V5.25A3.75 3.75 0 0 0 9 1.5H5.625ZM7.5 15a.75.75 0 0 1 .75-.75h7.5a.75.75 0 0 1 0 1.5h-7.5A.75.75 0 0 1 7.5 15Zm.75 2.25a.75.75 0 0 0 0 1.5H12a.75.75 0 0 0 0-1.5H8.25Z"
+                          clip-rule="evenodd"/>
+                    <path d="M12.971 1.816A5.23 5.23 0 0 1 14.25 5.25v1.875c0 .207.168.375.375.375H16.5a5.23 5.23 0 0 1 3.434 1.279 9.768 9.768 0 0 0-6.963-6.963Z"/>
+                </svg>
+            </header>
+            <main>
+                <p class="text-2xl lg:text-3xl text-gray-300 mt-8">An experienced Belgian
+                    <span class="bg-gradient-to-r from-gray-900 to-gray-900/50 font-bold px-1 rounded-md">Full-stack software developer</span>
+                    &
+                    <span class="bg-gradient-to-r from-gray-900 to-gray-900/50 font-bold px-1 rounded-md">tech lead</span>
+                    with active professional knowledge on
+                    <span class="bg-gradient-to-r from-gray-900 to-gray-900/50 font-bold px-1 rounded-md">Java</span>,
+                    <span class="bg-gradient-to-r from-gray-900 to-gray-900/50 font-bold px-1 rounded-md">Angular</span>,
+                    <span class="bg-gradient-to-r from-gray-900 to-gray-900/50 font-bold px-1 rounded-md">Azure</span>
+                    and their ecosystems. A true believer of software craftsmanship and the eXtreme Programming
+                    practices.
+                    Strives to create
+                    <span class="bg-gradient-to-r from-gray-900 to-gray-900/50 font-bold px-1 rounded-md">maintainable</span>,
+                    <span class="bg-gradient-to-r from-gray-900 to-gray-900/50 font-bold px-1 rounded-md">flexible</span>,
+                    and
+                    <span class="bg-gradient-to-r from-gray-900 to-gray-900/50 font-bold px-1 rounded-md">secure</span>
+                    software,
+                    together as a <span class="bg-gradient-to-r from-gray-900 to-gray-900/50 font-bold px-1 rounded-md">team</span>.
+                    Embraces and enjoys
+                    <span class="bg-gradient-to-r from-gray-900 to-gray-900/50 font-bold px-1 rounded-md">continuous learning</span>.
+                    <span class="bg-gradient-to-r from-gray-900 to-gray-900/50 font-bold px-1 rounded-md">Coaches</span>
+                    and leads by example.
+                    <span class="bg-gradient-to-r from-gray-900 to-gray-900/50 font-bold px-1 rounded-md">Structured</span>
+                    in both work and communication.
+                    Creative, friendly and <span class="italic">slightly</span> funny.
+                </p>
+            </main>
+        </section>
+        <section class="basis-1/6 place-self-center lg:place-self-left mt-5 lg:mt-0">
+            <img class="w-80 lg:w-72 shadow-lg shadow-gray-950 rounded-full rounded-t-xl lg:rounded-xl hue-rotate-15 lg:scale-110 lg:rotate-3 transition duration-300 ease-in-out hover:lg:-rotate-3"
+                 src="../assets/niels.png"/>
+        </section>
     </div>
-</div>
 
-<div class="cv">
+    <div class="basis-3/3 shadow-2xl shadow-gray-950 bg-gray-800 relative">
+        <div class="w-full h-40 bg-gradient-to-r from-amber-200 to-rose-400/75 absolute -z-10 scale-[1.0125] -translate-y-1 lg:-translate-y-2.5"></div>
 
-    <section class="container">
-        <div class="content-wrapper-cv z-depth-5">
-            <span class="right"><button class="btn download-cv btn-small waves-effect waves-light" title="Download CV"
-                                        onclick="window.print()"><i
-                    class="material-icons black-text">file_download</i></button></span>
-            <span class="right"><button class="btn downloading-cv btn-small waves-effect waves-light"
-                                        title="Downloading..." disabled><i
-                    class="material-icons black-text">refresh</i></button></span>
-            <div class="content-wrapper-cv-inner">
-                <div>
-                    <img src="/assets/niels.png" class="right" alt="Niels Delestinne">
+        <ol class="relative ml-10 border-l-2 border-gray-400 border-dotted p-10 list-inside">
+
+            <li class="mb-10">
+                <div class="absolute p-2 flex items-center justify-center w-12 h-12 bg-gray-900 rounded-full -start-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-10 lg:size-20 text-amber-200">
+                        <path d="M5.25 6.375a4.125 4.125 0 1 1 8.25 0 4.125 4.125 0 0 1-8.25 0ZM2.25 19.125a7.125 7.125 0 0 1 14.25 0v.003l-.001.119a.75.75 0 0 1-.363.63 13.067 13.067 0 0 1-6.761 1.873c-2.472 0-4.786-.684-6.76-1.873a.75.75 0 0 1-.364-.63l-.001-.122ZM18.75 7.5a.75.75 0 0 0-1.5 0v2.25H15a.75.75 0 0 0 0 1.5h2.25v2.25a.75.75 0 0 0 1.5 0v-2.25H21a.75.75 0 0 0 0-1.5h-2.25V7.5Z" />
+                    </svg>
+
                 </div>
-                <h1 class="cv-title no-margin" itemprop="name headline">Niels Delestinne</h1>
-                <div class="cv-details valign-wrapper">
-                    <div class="flex-inner">
-                        <div class="padding-right-half">
-                            <i class="tiny material-icons amber-text text-lighten-3">child_care</i>
-                            Jan. 1991, Belgian
-                        </div>
-                        <div class="padding-right-half">
-                            <i class="tiny material-icons amber-text text-lighten-3">location_on</i>
-                            Diest 3290, BE
-                        </div>
-                        <div class="padding-right-half">
-                            <i class="tiny material-icons amber-text text-lighten-3">email</i>
-                            <a href="mailto:cv@niedel.be">cv@niedel.be</a>
-                        </div>
-                        <div class="padding-right-half">
-                            <i class="tiny material-icons amber-text text-lighten-3">local_phone</i>
-                            <em>on demand</em>
-                        </div>
-                        <div class="padding-right-half">
-                            <i class="tiny material-icons amber-text text-lighten-3">code</i>
-                            <a href="https://github.com/nielsdelestinne" target="_blank" title="GitHub">GitHub</a>
-                        </div>
-                        <div>
-                            <i class="tiny material-icons amber-text text-lighten-3">face</i>
-                            <a href="https://www.linkedin.com/in/niedel" target="_blank" title="LinkedIn">LinkedIn</a>
-                        </div>
-                    </div>
+                <div class="flex items-start lg:items-center flex-wrap mb-0.5 text-xl font-bold text-gray-300">
+                    <h3 class="basis-3/3 lg:basis-auto">Being born</h3>
                 </div>
-                <div>
-                    <time class="dt-published padding-right-half" datetime="25/06/2024" itemprop="datePublished">
-                        <i class="tiny material-icons">access_time</i>
-                        <em class="online-notice">CV updated on 25/06/2024.</em>
-                        <em class="print-notice">View the most recent version of my CV online at <a
-                                href="https://niedel.be/cv" title="Niels Delestinne CV" target="_blank">niedel.be/cv</a>.</em>
-                    </time>
+                <time class="block mb-2 text-md font-normal text-gray-400">
+                    January 1991 <span class="text-amber-200">•</span> Belgium
+                </time>
+                <p class="mb-4 text-lg font-normal text-gray-500">The start of my journey. </p>
+            </li>
+
+            <li class="mb-10">
+                <div class="absolute p-2 flex items-center justify-center w-12 h-12 bg-gray-900 rounded-full -start-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                         stroke="currentColor" class="size-10 lg:size-20 text-amber-200">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                              d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0"/>
+                    </svg>
                 </div>
+                <h3 class="flex items-center mb-0.5 text-xl font-bold text-gray-300">First web app
+                </h3>
+                <time class="block mb-2 text-md font-normal text-gray-400">
+                    July 2006
+                </time>
+                <p class="mb-4 text-lg font-normal text-gray-500">Created my first web app using XHTML, CSS and PHP.</p>
+            </li>
+
+            <li class="mb-10">
+                <div class="absolute p-2 flex items-center justify-center w-12 h-12 bg-gray-900 rounded-full -start-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-10 lg:size-20 text-amber-200">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5" />
+                    </svg>
+                </div>
+                <h3 class="flex items-center mb-0.5 text-xl font-bold text-gray-300">Bachelor Applied Informatics <span class="text-amber-200 px-1">•</span> PXL
+                </h3>
+                <time class="block mb-2 text-md font-normal text-gray-400">
+                    September 2009 - June 2012
+                </time>
+                <p class="mb-4 text-lg font-normal text-gray-500">Graduated Cum Laude with a Professional Bachelor’s in Applied Informatics, specializing in Software Development, including a four-month internship in Prague, Czechia.</p>
+            </li>
+
+            <li class="mb-10">
+                <div class="absolute p-2 flex items-center justify-center w-12 h-12 bg-gray-900 rounded-full -start-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-10 lg:size-20 text-amber-200">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5" />
+                    </svg>
+                </div>
+                <h3 class="flex items-center mb-0.5 text-xl font-bold text-gray-300">Master of Science (M.S.), MSc. Applied Informatics <span class="text-amber-200 px-1">•</span> KUL
+                </h3>
+                <time class="block mb-2 text-md font-normal text-gray-400">
+                    September 2012 - June 2015
+                </time>
+                <p class="mb-4 text-lg font-normal text-gray-500">Graduated Magna Cum Laude with a Master of Science (M.Sc.) in Applied Informatics, specializing in Software Engineering, Machine Learning, AI, and User Interaction, after completing a transition year at the start.</p>
+            </li>
+
+            <li class="mb-10">
+                <div class="absolute p-2 flex items-center justify-center w-12 h-12 bg-gray-900 rounded-full -start-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                         stroke="currentColor" class="size-10 lg:size-20 text-amber-200">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                              d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0"/>
+                    </svg>
+                </div>
+                <h3 class="flex items-center mb-0.5 text-xl font-bold text-gray-300">Joined Cegeka
+                </h3>
+                <time class="block mb-2 text-md font-normal text-gray-400">
+                    August 2015
+                </time>
+                <p class="mb-4 text-lg font-normal text-gray-500">Working as part of a software development team for
+                    various projects, via Cegeka.</p>
+            </li>
+
+            <li class="mb-10">
+                <div class="absolute p-2 flex items-center justify-center w-12 h-12 bg-gray-900 rounded-full -start-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                         class="size-10 lg:size-20 text-amber-200">
+                        <path fill-rule="evenodd"
+                              d="M12 6.75a5.25 5.25 0 0 1 6.775-5.025.75.75 0 0 1 .313 1.248l-3.32 3.319c.063.475.276.934.641 1.299.365.365.824.578 1.3.64l3.318-3.319a.75.75 0 0 1 1.248.313 5.25 5.25 0 0 1-5.472 6.756c-1.018-.086-1.87.1-2.309.634L7.344 21.3A3.298 3.298 0 1 1 2.7 16.657l8.684-7.151c.533-.44.72-1.291.634-2.309A5.342 5.342 0 0 1 12 6.75ZM4.117 19.125a.75.75 0 0 1 .75-.75h.008a.75.75 0 0 1 .75.75v.008a.75.75 0 0 1-.75.75h-.008a.75.75 0 0 1-.75-.75v-.008Z"
+                              clip-rule="evenodd"/>
+                    </svg>
+                </div>
+                <div class="flex items-start lg:items-center flex-wrap mb-0.5 text-xl font-bold text-gray-300">
+                    <h3 class="basis-3/3 lg:basis-auto">Full-stack <span class="text-amber-200">•</span> VDAB</h3>
+                    <span class=" bg-gray-900 text-amber-200 text-sm font-medium px-1.5 py-0.5 rounded-sm lg:ms-3 mr-2 my-2 lg:my-0">Employed</span>
+                    <span class="bg-gray-900 text-amber-200 text-sm font-medium px-1.5 py-0.5 rounded-sm my-2 lg:my-0">Cegeka</span>
+                </div>
+                <time class="block mb-2 text-md font-normal text-gray-400">
+                    August 2015 - September 2017 <span class="text-amber-200">•</span> Leuven BE, Brussels BE
+                </time>
+                <p class="mb-4 text-lg font-normal text-gray-500">Started my career in 2015 as a full-stack developer at Cegeka, working on different (greenfield) projects for VDAB, the public employment service of Flanders. Gained valuable experience in Agile development, Scrum, and eXtreme Programming while collaborating with a great team.</p>
+            </li>
+
+            <li class="mb-10">
+                <div class="absolute p-2 flex items-center justify-center w-12 h-12 bg-gray-900 rounded-full -start-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                         stroke="currentColor" class="size-10 lg:size-20 text-amber-200">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                              d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0"/>
+                    </svg>
+                </div>
+                <div class="flex items-start lg:items-center flex-wrap mb-0.5 text-xl font-bold text-gray-300">
+                    <h3 class="basis-3/3 lg:basis-auto">Co-founded Switchfully</h3>
+                </div>
+                <time class="block mb-2 text-md font-normal text-gray-400">
+                    August 2017
+                </time>
+                <p class="mb-4 text-lg font-normal text-gray-500">Co-founded and grew Switchfully, an internal venture at Cegeka, after successfully pitching the idea in an entrepreneurial bootcamp. At Switchfully we retrained motivated career switchers into junior software developers through our own officially recognized training programs.</p>
+            </li>
+
+            <li class="mb-10">
+                <div class="absolute p-2 flex items-center justify-center w-12 h-12 bg-gray-900 rounded-full -start-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                         class="size-10 lg:size-20 text-amber-200">
+                        <path fill-rule="evenodd"
+                              d="M12 6.75a5.25 5.25 0 0 1 6.775-5.025.75.75 0 0 1 .313 1.248l-3.32 3.319c.063.475.276.934.641 1.299.365.365.824.578 1.3.64l3.318-3.319a.75.75 0 0 1 1.248.313 5.25 5.25 0 0 1-5.472 6.756c-1.018-.086-1.87.1-2.309.634L7.344 21.3A3.298 3.298 0 1 1 2.7 16.657l8.684-7.151c.533-.44.72-1.291.634-2.309A5.342 5.342 0 0 1 12 6.75ZM4.117 19.125a.75.75 0 0 1 .75-.75h.008a.75.75 0 0 1 .75.75v.008a.75.75 0 0 1-.75.75h-.008a.75.75 0 0 1-.75-.75v-.008Z"
+                              clip-rule="evenodd"/>
+                    </svg>
+                </div>
+                <div class="flex items-start lg:items-center flex-wrap mb-0.5 text-xl font-bold text-gray-300">
+                    <h3 class="basis-3/3 lg:basis-auto">Technical trainer & co-founder <span class="text-amber-200">•</span> Switchfully</h3>
+                    <span class=" bg-gray-900 text-amber-200 text-sm font-medium px-1.5 py-0.5 rounded-sm lg:ms-3 mr-2 my-2 lg:my-0">Employed</span>
+                    <span class="bg-gray-900 text-amber-200 text-sm font-medium px-1.5 py-0.5 rounded-sm my-2 lg:my-0">Cegeka</span>
+                </div>
+                <time class="block mb-2 text-md font-normal text-gray-400">
+                    September 2017 - January 2020 <span class="text-amber-200">•</span> Brussels BE
+                </time>
+                <p class="mb-4 text-lg font-normal text-gray-500">Designed, built, maintained and taught a custom 4-month full-stack development training program for career switchers. Mentoring, coaching, and fostering continuous learning. We handled branding, marketing, recruitment, and business development, securing our first customers and working with clients like LCM, FBS Finance, and Colruyt, while growing Switchfully into its own office and classroom at BeCentral Brussels.</p>
+            </li>
+
+            <li class="mb-10">
+                <div class="absolute p-2 flex items-center justify-center w-12 h-12 bg-gray-900 rounded-full -start-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                         class="size-10 lg:size-20 text-amber-200">
+                        <path fill-rule="evenodd"
+                              d="M12 6.75a5.25 5.25 0 0 1 6.775-5.025.75.75 0 0 1 .313 1.248l-3.32 3.319c.063.475.276.934.641 1.299.365.365.824.578 1.3.64l3.318-3.319a.75.75 0 0 1 1.248.313 5.25 5.25 0 0 1-5.472 6.756c-1.018-.086-1.87.1-2.309.634L7.344 21.3A3.298 3.298 0 1 1 2.7 16.657l8.684-7.151c.533-.44.72-1.291.634-2.309A5.342 5.342 0 0 1 12 6.75ZM4.117 19.125a.75.75 0 0 1 .75-.75h.008a.75.75 0 0 1 .75.75v.008a.75.75 0 0 1-.75.75h-.008a.75.75 0 0 1-.75-.75v-.008Z"
+                              clip-rule="evenodd"/>
+                    </svg>
+                </div>
+                <div class="flex items-start lg:items-center flex-wrap mb-0.5 text-xl font-bold text-gray-300">
+                    <h3 class="basis-3/3 lg:basis-auto">Full-stack & Lead <span class="text-amber-200">•</span> Acerta</h3>
+                    <span class=" bg-gray-900 text-amber-200 text-sm font-medium px-1.5 py-0.5 rounded-sm lg:ms-3 mr-2 my-2 lg:my-0">Employed</span>
+                    <span class="bg-gray-900 text-amber-200 text-sm font-medium px-1.5 py-0.5 rounded-sm my-2 lg:my-0">Cegeka</span>
+                </div>
+                <time class="block mb-2 text-md font-normal text-gray-400">
+                    January 2020 - January 2023 <span class="text-amber-200">•</span> Leuven BE
+                </time>
+                <p class="mb-4 text-lg font-normal text-gray-500">Developed a state-of-the-art payment engine for Acerta, one of Belgium’s largest payroll service providers, automating complex wage calculations and salary processing. Served as tech lead for different teams, the last being a 10-person team, developing both back-end and front-end applications.</p>
+            </li>
+
+            <li class="mb-10">
+                <div class="absolute p-2 flex items-center justify-center w-12 h-12 bg-gray-900 rounded-full -start-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                         stroke="currentColor" class="size-10 lg:size-20 text-amber-200">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                              d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0"/>
+                    </svg>
+                </div>
+                <h3 class="flex items-center mb-0.5 text-xl font-bold text-gray-300">Became Freelance
+                </h3>
+                <time class="block mb-2 text-md font-normal text-gray-400">
+                    December 2022
+                </time>
+                <p class="mb-4 text-lg font-normal text-gray-500">Started my journey as an independent freelancer.</p>
+            </li>
+
+            <li class="mb-10">
+                <div class="absolute p-2 flex items-center justify-center w-12 h-12 bg-gray-900 rounded-full -start-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                         stroke="currentColor" class="size-10 lg:size-20 text-amber-200">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                              d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0"/>
+                    </svg>
+                </div>
+                <h3 class="flex items-center mb-0.5 text-xl font-bold text-gray-300">Joined Kunlabora
+                </h3>
+                <time class="block mb-2 text-md font-normal text-gray-400">
+                    January 2023
+                </time>
+                <p class="mb-4 text-lg font-normal text-gray-500">Working as part of a software development team for
+                    various projects, via Kunlabora.</p>
+            </li>
+
+            <li class="mb-10">
+                <div class="absolute p-2 flex items-center justify-center w-12 h-12 bg-gray-900 rounded-full -start-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                         class="size-10 lg:size-20 text-amber-200">
+                        <path fill-rule="evenodd"
+                              d="M12 6.75a5.25 5.25 0 0 1 6.775-5.025.75.75 0 0 1 .313 1.248l-3.32 3.319c.063.475.276.934.641 1.299.365.365.824.578 1.3.64l3.318-3.319a.75.75 0 0 1 1.248.313 5.25 5.25 0 0 1-5.472 6.756c-1.018-.086-1.87.1-2.309.634L7.344 21.3A3.298 3.298 0 1 1 2.7 16.657l8.684-7.151c.533-.44.72-1.291.634-2.309A5.342 5.342 0 0 1 12 6.75ZM4.117 19.125a.75.75 0 0 1 .75-.75h.008a.75.75 0 0 1 .75.75v.008a.75.75 0 0 1-.75.75h-.008a.75.75 0 0 1-.75-.75v-.008Z"
+                              clip-rule="evenodd"/>
+                    </svg>
+                </div>
+                <h3 class="flex items-start lg:items-center flex-wrap mb-0.5 text-xl font-bold text-gray-300">Senior Full-stack <span class="text-amber-200 px-1">•</span> Siemens GRE
+                    <span class=" bg-gray-900 text-amber-200 text-sm font-medium px-1.5 py-0.5 rounded-sm lg:ms-3 mr-2 my-2 lg:my-0">Freelance</span>
+                    <span class="bg-gray-900 text-amber-200 text-sm font-medium px-1.5 py-0.5 rounded-sm my-2 lg:my-0">Kunlabora</span>
+                </h3>
+                <time class="block mb-2 text-md font-normal text-gray-400">
+                    January 2023 - January 2024 <span class="text-amber-200">•</span> Leuven BE, Cuxhaven GER
+                </time>
+                <p class="mb-4 text-lg font-normal text-gray-500">Developed MWC, a central coordinator for Siemens
+                    Gamesa’s offshore wind turbine assembly, optimizing air-gap precision by integrating measurements
+                    across work centers. Additionally, we ensured high availability by configuring and deploying the
+                    entire infrastructure, enhancing efficiency, monitoring, and failsafe mechanisms in production.</p>
+            </li>
+
+            <li class="mb-10">
+                <div class="absolute p-2 flex items-center justify-center w-12 h-12 bg-gray-900 rounded-full -start-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                         class="size-10 lg:size-20 text-amber-200">
+                        <path fill-rule="evenodd"
+                              d="M12 6.75a5.25 5.25 0 0 1 6.775-5.025.75.75 0 0 1 .313 1.248l-3.32 3.319c.063.475.276.934.641 1.299.365.365.824.578 1.3.64l3.318-3.319a.75.75 0 0 1 1.248.313 5.25 5.25 0 0 1-5.472 6.756c-1.018-.086-1.87.1-2.309.634L7.344 21.3A3.298 3.298 0 1 1 2.7 16.657l8.684-7.151c.533-.44.72-1.291.634-2.309A5.342 5.342 0 0 1 12 6.75ZM4.117 19.125a.75.75 0 0 1 .75-.75h.008a.75.75 0 0 1 .75.75v.008a.75.75 0 0 1-.75.75h-.008a.75.75 0 0 1-.75-.75v-.008Z"
+                              clip-rule="evenodd"/>
+                    </svg>
+                </div>
+                <div class="flex items-start lg:items-center flex-wrap mb-0.5 text-xl font-bold text-gray-300">
+                    <h3 class="basis-3/3 lg:basis-auto">Senior Full-stack <span class="text-amber-200">•</span> DELA</h3>
+                    <span class=" bg-gray-900 text-amber-200 text-sm font-medium px-1.5 py-0.5 rounded-sm lg:ms-3 mr-2 my-2 lg:my-0">Freelance</span>
+                    <span class="bg-gray-900 text-amber-200 text-sm font-medium px-1.5 py-0.5 rounded-sm my-2 lg:my-0">Kunlabora</span>
+                </div>
+                <time class="block mb-2 text-md font-normal text-gray-400">
+                    February 2024 - Current <span class="text-amber-200">•</span> Leuven BE, Antwerpen BE
+                </time>
+                <p class="mb-4 text-lg font-normal text-gray-500">Joined the newly formed Kunlabora team at DELA to take
+                    full ownership of the portal applications, which support the sales process flows for DELA's
+                    insurance branch. Our mission includes rationalizing the architecture and enhancing quality and
+                    reliability across multiple UIs and microservices.</p>
+            </li>
+
+
+
+
+
+
+
+
+
+
+        </ol>
+
+    </div>
+
+    <div class="w-full">
+        <div class="grid grid-flow-col grid-rows-4 gap-4">
+            <div class="bg-amber-200 text-gray-900">01</div>  <!-- ... -->
+            <div class="bg-amber-200 text-gray-900">05</div>
+            <div class="row-span-3 grid grid-rows-subgrid gap-4 bg-amber-200 text-gray-900">
+                <div class="row-start-2 bg-amber-200 text-gray-900">06</div>
             </div>
+            <div class="bg-amber-200 text-gray-900">07</div>  <!-- ... -->
+            <div class="bg-amber-200 text-gray-900">10</div>
         </div>
-    </section>
+    </div>
 
-    <section class="container no-margin-bottom">
-        <div class="content-wrapper z-depth-5">
-            <h2 class="no-margin">Profile</h2>
-            <p class="flow-text no-margin-bottom no-padding-bottom">
-                A freelance <strong>full-stack software developer</strong> & <strong>tech lead</strong> with active
-                professional
-                knowledge on <strong>Java, Angular</strong> and
-                both of their <strong>entire ecosystems</strong>. A true believer of <strong>software
-                craftsmanship</strong> and
-                the <strong>eXtreme Programming
-                practices</strong>. Strives to write <strong>readable, flexible</strong> and <strong>simple
-                code</strong> that
-                is properly <strong>tested</strong>. Aims to create
-                <strong>maintainable</strong>, <strong>flexible</strong> and <strong>performant</strong> applications
-                together, in team. Embraces and enjoys
-                <strong>continuous
-                    learning</strong>. <strong>Coaches</strong> and tries to <strong>inspire</strong>.
-                <strong>Mediates</strong>, <strong>collaborates</strong> & <strong>communicates</strong> well.
-                <strong>Creative</strong>,
-                <strong>friendly</strong> and <em>slightly</em> <strong>funny</strong>.
-            </p>
-        </div>
-    </section>
+    <div class="basis-3/3 shadow-2xl shadow-gray-950 bg-gray-800 relative">
+        <div class="w-full h-40 bg-gradient-to-r from-amber-200 to-rose-400/75 absolute -z-10 scale-[1.0125] -translate-y-1 lg:-translate-y-2.5"></div>
+        <section class="text-center lg:text-left p-10">
+            <header class="mb-10">
+                <h1 class="text-4xl lg:text-5xl font-bold text-amber-200">Career in a nutshell</h1>
+            </header>
+            <main>
+                <p class="text-2xl lg:text-3xl text-gray-300 mt-8">
+                    <span class="bg-gradient-to-r from-gray-900 to-gray-900/50 font-bold px-1 rounded-md">Full-stack software developer</span>
+                    &
+                    <span class="bg-gradient-to-r from-gray-900 to-gray-900/50 font-bold px-1 rounded-md">tech lead</span>
+                    with active professional knowledge on
+                    <span class="bg-gradient-to-r from-gray-900 to-gray-900/50 font-bold px-1 rounded-md">Java</span>,
+                    <span class="bg-gradient-to-r from-gray-900 to-gray-900/50 font-bold px-1 rounded-md">Angular</span>,
+                    <span class="bg-gradient-to-r from-gray-900 to-gray-900/50 font-bold px-1 rounded-md">Azure</span>
+                    and their ecosystems. A true believer of software craftsmanship and the eXtreme Programming
+                    practices.
+                    Strives to create
+                    <span class="bg-gradient-to-r from-gray-900 to-gray-900/50 font-bold px-1 rounded-md">maintainable</span>,
+                    <span class="bg-gradient-to-r from-gray-900 to-gray-900/50 font-bold px-1 rounded-md">flexible</span>,
+                    and
+                    <span class="bg-gradient-to-r from-gray-900 to-gray-900/50 font-bold px-1 rounded-md">secure</span>
+                    software,
+                    together as a <span
+                        class="bg-gradient-to-r from-gray-900 to-gray-900/50 font-bold px-1 rounded-md">team</span>.
+                    Embraces and enjoys
+                    <span class="bg-gradient-to-r from-gray-900 to-gray-900/50 font-bold px-1 rounded-md">continuous learning</span>.
+                    <span class="bg-gradient-to-r from-gray-900 to-gray-900/50 font-bold px-1 rounded-md">Coaches</span>
+                    and leads by example.
+                    <span class="bg-gradient-to-r from-gray-900 to-gray-900/50 font-bold px-1 rounded-md">Structured</span>
+                    in both work and communication.
+                    Creative, friendly and <span class="italic">slightly</span> funny.
+                </p>
+            </main>
+        </section>
+    </div>
 
-    <section class="container no-margin-bottom">
-        <div class="content-wrapper z-depth-5">
-            <h2 class="no-margin">Work experience</h2>
-            <div class="z-depth-3 education flex-element no-margin-bottom">
-                <h3>Full-stack Developer @ DELA <span class="badge">FREELANCE</span> <span
-                        class="badge">CURRENT PROJECT</span></h3>
-                <div class="cv-details valign-wrapper">
-                    <div class="flex-inner">
-                        <div class="padding-right-half">
-                            <i class="tiny material-icons amber-text text-lighten-3">access_time</i>
-                            Feb. 2024 - <strong>Present</strong>
-                        </div>
-                        <div class="padding-right-half">
-                            <i class="tiny material-icons amber-text text-lighten-3">work</i>
-                            DELA (on behalf of Kunlabora)
-                        </div>
-                        <div class="padding-right-half">
-                            <i class="tiny material-icons amber-text text-lighten-3">location_on</i>
-                            Leuven, Belgium. Antwerp, Belgium
-                        </div>
+    <div class="basis-3/3 shadow-2xl shadow-gray-950 bg-gray-800 relative">
+        <div class="w-full h-40 bg-gradient-to-r from-amber-200 to-rose-400/75 absolute -z-10 scale-[1.0125] -translate-y-1 lg:-translate-y-2.5"></div>
+        <section class="text-center lg:text-left p-10">
+            <header class="mb-10">
+                <h1 class="text-4xl lg:text-5xl font-bold text-amber-200">What?</h1>
+            </header>
+            <main class="flex flex-row gap-10 flex-wrap lg:flex-nowrap place-items-stretch">
+                <div class="basis-3/3 lg:basis-1/3 p-10 bg-gradient-to-b from-gray-700/50 to-gray-700/50 text-xl lg:text-2xl text-gray-300 flex flex-col content-start items-center text-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                         class="size-10 lg:size-20 text-amber-200">
+                        <path fill-rule="evenodd"
+                              d="M12 6.75a5.25 5.25 0 0 1 6.775-5.025.75.75 0 0 1 .313 1.248l-3.32 3.319c.063.475.276.934.641 1.299.365.365.824.578 1.3.64l3.318-3.319a.75.75 0 0 1 1.248.313 5.25 5.25 0 0 1-5.472 6.756c-1.018-.086-1.87.1-2.309.634L7.344 21.3A3.298 3.298 0 1 1 2.7 16.657l8.684-7.151c.533-.44.72-1.291.634-2.309A5.342 5.342 0 0 1 12 6.75ZM4.117 19.125a.75.75 0 0 1 .75-.75h.008a.75.75 0 0 1 .75.75v.008a.75.75 0 0 1-.75.75h-.008a.75.75 0 0 1-.75-.75v-.008Z"
+                              clip-rule="evenodd"/>
+                        <path d="m10.076 8.64-2.201-2.2V4.874a.75.75 0 0 0-.364-.643l-3.75-2.25a.75.75 0 0 0-.916.113l-.75.75a.75.75 0 0 0-.113.916l2.25 3.75a.75.75 0 0 0 .643.364h1.564l2.062 2.062 1.575-1.297Z"/>
+                        <path fill-rule="evenodd"
+                              d="m12.556 17.329 4.183 4.182a3.375 3.375 0 0 0 4.773-4.773l-3.306-3.305a6.803 6.803 0 0 1-1.53.043c-.394-.034-.682-.006-.867.042a.589.589 0 0 0-.167.063l-3.086 3.748Zm3.414-1.36a.75.75 0 0 1 1.06 0l1.875 1.876a.75.75 0 1 1-1.06 1.06L15.97 17.03a.75.75 0 0 1 0-1.06Z"
+                              clip-rule="evenodd"/>
+                    </svg>
+                    <h3 class="text-2xl lg:text-3xl text-amber-200">Software development</h3>
+                    <hr class="bg-gradient-to-r from-amber-200 to-rose-400/75 h-0.5 w-1/3 my-2 lg:my-5 border-0">
+                    Skillfully designed, craftfully implemented custom software. Using industry best practices & taking
+                    into account all requirements.
+                </div>
+                <div class="basis-3/3 lg:basis-1/3 p-10 bg-gradient-to-b from-gray-700/50 to-gray-700/50 text-xl lg:text-2xl text-gray-300 flex flex-col content-start items-center text-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                         class="size-10 lg:size-20 text-amber-200">
+                        <path fill-rule="evenodd"
+                              d="M2.25 5.25a3 3 0 0 1 3-3h13.5a3 3 0 0 1 3 3V15a3 3 0 0 1-3 3h-3v.257c0 .597.237 1.17.659 1.591l.621.622a.75.75 0 0 1-.53 1.28h-9a.75.75 0 0 1-.53-1.28l.621-.622a2.25 2.25 0 0 0 .659-1.59V18h-3a3 3 0 0 1-3-3V5.25Zm1.5 0v7.5a1.5 1.5 0 0 0 1.5 1.5h13.5a1.5 1.5 0 0 0 1.5-1.5v-7.5a1.5 1.5 0 0 0-1.5-1.5H5.25a1.5 1.5 0 0 0-1.5 1.5Z"
+                              clip-rule="evenodd"/>
+                    </svg>
+                    <h3 class="text-2xl lg:text-3xl text-amber-200">Web development</h3>
+                    <hr class="bg-gradient-to-r from-amber-200 to-rose-400/75 h-0.5 w-1/3 my-2 lg:my-5 border-0">
+                    Interactive, dynamic and responsive web apps & websites created using mature and stable frameworks,
+                    combining both UI and UX.
+                </div>
+                <div class="basis-3/3 lg:basis-1/3 p-10 bg-gradient-to-b from-gray-700/50 to-gray-700/50 text-xl lg:text-2xl text-gray-300 flex flex-col content-start items-center text-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                         class="size-10 lg:size-20 text-amber-200">
+                        <path fill-rule="evenodd"
+                              d="M8.161 2.58a1.875 1.875 0 0 1 1.678 0l4.993 2.498c.106.052.23.052.336 0l3.869-1.935A1.875 1.875 0 0 1 21.75 4.82v12.485c0 .71-.401 1.36-1.037 1.677l-4.875 2.437a1.875 1.875 0 0 1-1.676 0l-4.994-2.497a.375.375 0 0 0-.336 0l-3.868 1.935A1.875 1.875 0 0 1 2.25 19.18V6.695c0-.71.401-1.36 1.036-1.677l4.875-2.437ZM9 6a.75.75 0 0 1 .75.75V15a.75.75 0 0 1-1.5 0V6.75A.75.75 0 0 1 9 6Zm6.75 3a.75.75 0 0 0-1.5 0v8.25a.75.75 0 0 0 1.5 0V9Z"
+                              clip-rule="evenodd"/>
+                    </svg>
+                    <h3 class="text-2xl lg:text-3xl text-amber-200">Technical leadership</h3>
+                    <hr class="bg-gradient-to-r from-amber-200 to-rose-400/75 h-0.5 w-1/3 my-2 lg:my-5 border-0">
+                    Guiding, empowering & coaching teams as a technical lead. Clear, open & structured communication
+                    between all involved parties.
+                </div>
+            </main>
+        </section>
+    </div>
+
+    <div class="basis-3/3 shadow-2xl shadow-gray-950 bg-gray-800 relative">
+        <div class="w-full h-40 bg-gradient-to-r from-amber-200 to-rose-400/75 absolute -z-10 scale-[1.0125] -translate-y-1 lg:-translate-y-2.5"></div>
+        <section class="text-center lg:text-left p-10">
+            <header class="mb-10">
+                <h1 class="text-4xl lg:text-5xl font-bold text-amber-200">Recommendations</h1>
+            </header>
+            <main class="flex flex-row gap-10 flex-wrap lg:flex-nowrap place-items-stretch">
+                <div class="basis-3/3 lg:basis-1/3 p-10 bg-gradient-to-b from-gray-700/50 to-gray-700/50 text-xl lg:text-2xl text-gray-300 flex flex-col content-start items-center text-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                         class="size-10 lg:size-20 text-amber-200">
+                        <path fill-rule="evenodd"
+                              d="M18.685 19.097A9.723 9.723 0 0 0 21.75 12c0-5.385-4.365-9.75-9.75-9.75S2.25 6.615 2.25 12a9.723 9.723 0 0 0 3.065 7.097A9.716 9.716 0 0 0 12 21.75a9.716 9.716 0 0 0 6.685-2.653Zm-12.54-1.285A7.486 7.486 0 0 1 12 15a7.486 7.486 0 0 1 5.855 2.812A8.224 8.224 0 0 1 12 20.25a8.224 8.224 0 0 1-5.855-2.438ZM15.75 9a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
+                              clip-rule="evenodd"/>
+                    </svg>
+                    <h3 class="text-2xl lg:text-3xl text-amber-200">Darek Krzywania</h3>
+                    <h4 class="text-md lg:text-lg text-grey-300">Agile coach at Mediagenix</h4>
+                    <hr class="bg-gradient-to-r from-amber-200 to-rose-400/75 h-0.5 w-1/3 my-2 lg:my-5 border-0">
+                    <div class="italic">
+                        <span class="text-amber-300 text-4xl font-bold font-serif">"</span>
+                        It has been clear from our first assignment together that Niels is a motivated developer and
+                        technical lead. His dedication, creativity and technical coaching skills became even more
+                        apparent during - and after - the start-up of Switchfully. A colleague I have much confidence in
+                        and would highly recommend.
                     </div>
                 </div>
-                <hr class="fade">
-                <p class="flow-text">
-                    Taking over the portal applications...
-                </p>
-                <p>DELA specializes in offering funeral plans, life insurance, and related financial products to ensure
-                    individuals and families are well-prepared for end-of-life arrangements. DELA focuses on delivering
-                    compassionate support, efficient planning, and financial security to its clients during difficult
-                    times.</p>
-                <p>At DELA, I'm part of the newly created Kunlabora team, which is tasked with fully taking over all
-                    applications - which enable the policy proposal flows - of DELA's insurance branch. These are known
-                    as "the portals" and consist of different UIs and a lot of (micro)services.</p>
-                <p>Part of our mission is to rationalize the architecture and improve the overall quality and
-                    reliability of the aforementioned applications landscape. It is not the easiest of assignments, but
-                    we've got a great set of clever thinkers and are driven by a can-do mindset.</p>
-
-            </div>
-            <div class="z-depth-3 education flex-element no-margin-bottom">
-                <h3>Full-stack Developer @ Siemens Gamesa <span class="badge">FREELANCE</span></h3>
-                <div class="cv-details valign-wrapper">
-                    <div class="flex-inner">
-                        <div class="padding-right-half">
-                            <i class="tiny material-icons amber-text text-lighten-3">access_time</i>
-                            Jan. 2023 - Jan. 2024
-                        </div>
-                        <div class="padding-right-half">
-                            <i class="tiny material-icons amber-text text-lighten-3">work</i>
-                            Siemens Gamesa (on behalf of Kunlabora)
-                        </div>
-                        <div class="padding-right-half">
-                            <i class="tiny material-icons amber-text text-lighten-3">location_on</i>
-                            Leuven, Belgium. Cuxhaven, Germany
-                        </div>
+                <div class="basis-3/3 lg:basis-1/3 p-10 bg-gradient-to-b from-gray-700/50 to-gray-700/50 text-xl lg:text-2xl text-gray-300 flex flex-col content-start items-center text-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                         class="size-10 lg:size-20 text-amber-200">
+                        <path fill-rule="evenodd"
+                              d="M18.685 19.097A9.723 9.723 0 0 0 21.75 12c0-5.385-4.365-9.75-9.75-9.75S2.25 6.615 2.25 12a9.723 9.723 0 0 0 3.065 7.097A9.716 9.716 0 0 0 12 21.75a9.716 9.716 0 0 0 6.685-2.653Zm-12.54-1.285A7.486 7.486 0 0 1 12 15a7.486 7.486 0 0 1 5.855 2.812A8.224 8.224 0 0 1 12 20.25a8.224 8.224 0 0 1-5.855-2.438ZM15.75 9a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
+                              clip-rule="evenodd"/>
+                    </svg>
+                    <h3 class="text-2xl lg:text-3xl text-amber-200">Reinaut Van Bets</h3>
+                    <h4 class="text-md lg:text-lg text-grey-300">Program manager at Cegeka</h4>
+                    <hr class="bg-gradient-to-r from-amber-200 to-rose-400/75 h-0.5 w-1/3 my-2 lg:my-5 border-0">
+                    <div class="italic">
+                        <span class="text-amber-300 text-4xl font-bold font-serif">"</span>
+                        Together with Niels, I had the opportunity to create a new business unit within Cegeka. His
+                        entrepreneurship and creativity allows him to quickly envision and create concepts. He
+                        craftsmanship and focus in all of his work, raising the bar for himself and taking continuous
+                        learning seriously. Working together with Niels is both educational and a true pleasure.
                     </div>
                 </div>
-                <hr class="fade">
-                <p class="flow-text">
-                    Minimizing the air-gap of offshore wind turbines.
-                </p>
-                <p>
-                    Siemens Gamesa is one of the leaders in renewable energy and pioneered the offshore wind
-                    industry. Since then, both the use and size of wind turbines have scaled immensely.
-                    Producing and assembling these wind turbines requires the finest engineering and highest
-                    precision.
-                </p>
-                <p>
-                    To ensure optimal yield and reduce maintenance overhead, minimizing the air gap between the
-                    rotor and stator is vital.
-                    Therefore, the assembly process is measurement-driven; each work center is equipped with
-                    their
-                    own specialized measurement devices.
-                </p>
-                <p>
-                    As a member of the designated Kunlabora software development team, we were tasked with
-                    creating
-                    a central coordinator (named MWC). It mediates the communication between the involved work
-                    centers through well-defined protocols, schematics, and APIs.
-                    MWC aggregates the measurements and channels them to subsequent work centers, enabling these
-                    work centers and their operators to achieve the highest precision.
-                    When each link in the assembly chain is optimized, so is the final assembled turbine.
-                </p>
-                <p>
-                    Additionally, MWC is built to offer support for managing and planning production orders, for
-                    manually intervening, overriding or rolling back steps in the assembly process (failsafes),
-                    for
-                    monitoring the assembly process and its current progress,
-                    for monitoring the state of the MWC infrastructure, and for designing and defining—at
-                    runtime—the actors and exchanged data involved in the assembly process of a particular wind
-                    turbine.
-                </p>
-                <p>
-                    Finally, we had full responsibility for configuring and installing the entire,
-                    high-availability, infrastructure on which MWC runs.
-                </p>
-                <p>
-                    A truly unique project, experience, and team.
-                </p>
-                <h4>Technologies used</h4>
-                <p>
-                    Some of the technologies and tools I've used: Java 17+, Spring Boot & others (JDBC-Data, Web,
-                    Security,...), PostgreSQL, JUnit5, ArchUnit, Ports & Adapters (architecture), Jackson, Flyway,
-                    Testcontainers, GitHub Actions,
-                    Terraform, Azure, Docker & Docker Compose, REST(ful) APIs, Gradle, Angular (16), TypeScript,
-                    NPM, Playwright, Git, SonarCloud.
-                </p>
-                <h4>Achievements & responsibilities</h4>
-                <ul>
-                    <li>Day-to-day hands-on programming and pairing on new features</li>
-                    <li>Setting up, reviewing and improving the structure and architecture</li>
-                    <li>Conducting in-depth analyses and proposing effective solutions</li>
-                    <li>Coaching, training, and enabling other team members</li>
-                    <li>Learning from other team members whenever the chance arose</li>
-                    <li>Facilitating and participating in workshops in both Denmark and Germany with Siemens Gamesa
-                        and its suppliers
-                    </li>
-                    <li>Coordinating the integration of the measurement equipment with MWC</li>
-                    <li>Configuring and installing the infrastructure</li>
-                </ul>
-            </div>
-            <div class="z-depth-3 education flex-element no-margin-bottom">
-                <h3>Full-stack Developer & Tech lead @ Acerta</h3>
-                <div class="cv-details valign-wrapper">
-                    <div class="flex-inner">
-                        <div class="padding-right-half">
-                            <i class="tiny material-icons amber-text text-lighten-3">access_time</i>
-                            Jan. 2020 - Jan. 2023
-                        </div>
-                        <div class="padding-right-half">
-                            <i class="tiny material-icons amber-text text-lighten-3">work</i>
-                            Acerta (on behalf of Cegeka)
-                        </div>
-                        <div class="padding-right-half">
-                            <i class="tiny material-icons amber-text text-lighten-3">location_on</i>
-                            Acerta, Leuven
-                        </div>
+                <div class="basis-3/3 lg:basis-1/3 p-10 bg-gradient-to-b from-gray-700/50 to-gray-700/50 text-xl lg:text-2xl text-gray-300 flex flex-col content-start items-center text-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                         class="size-10 lg:size-20 text-amber-200">
+                        <path fill-rule="evenodd"
+                              d="M18.685 19.097A9.723 9.723 0 0 0 21.75 12c0-5.385-4.365-9.75-9.75-9.75S2.25 6.615 2.25 12a9.723 9.723 0 0 0 3.065 7.097A9.716 9.716 0 0 0 12 21.75a9.716 9.716 0 0 0 6.685-2.653Zm-12.54-1.285A7.486 7.486 0 0 1 12 15a7.486 7.486 0 0 1 5.855 2.812A8.224 8.224 0 0 1 12 20.25a8.224 8.224 0 0 1-5.855-2.438ZM15.75 9a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
+                              clip-rule="evenodd"/>
+                    </svg>
+                    <h3 class="text-2xl lg:text-3xl text-amber-200">Gilliam Flebus</h3>
+                    <h4 class="text-md lg:text-lg text-grey-300">Freelance front end developer</h4>
+                    <hr class="bg-gradient-to-r from-amber-200 to-rose-400/75 h-0.5 w-1/3 my-2 lg:my-5 border-0">
+                    <div class="italic">
+                        <span class="text-amber-300 text-4xl font-bold font-serif">"</span>
+                        Niels is one of the most driven and passionate people I know. Delivering something half-baked is
+                        not
+                        an option for Niels. There are not many people I'd confidently give a project to if it has to be
+                        done well, but Niels is certainly one of them.
                     </div>
+
                 </div>
-                <hr class="fade">
-                <p class="flow-text">
-                    Creating an entire new and
-                    state-of-the-art payment engine for Acerta.
-                </p>
-                <p>
-                    Acerta is one of Belgium's largest social security office and payroll service provider.
-                    Correctly and quickly calculating wage calculations, generating payment slips, paying out
-                    salaries and sending declarations to the correct legal instances are only a few of the many
-                    processes that need to be automated.
-                </p>
-                <p>
-                    Having joined the project from the beginning, I worked on many domains in
-                    different teams. During the last year, I was the tech lead of a 10-person team, working on both
-                    back and front-end.
-                </p>
-                <h4>Technologies used</h4>
-                <p>
-                    Some of the technologies and tools I've used: Java
-                    11+, Java modularity, JPA with Hibernate, Spring boot & others (data, web, security,...), MySQL,
-                    Cucumber (BDD), JUnit, Microservices, Ports & Adapters
-                    (architecture), Jackson, Pulsar, Debezium, Jenkins, OpenShift (OKD), Docker & Docker compose,
-                    Kibana,
-                    New Relic, PACT (contract testing), REST(ful) APIs, SFTP, Maven, Angular (11+), TypeScript, NPM,
-                    Nrwl Nx, ESLint,
-                    Prettier, JEST, Storybook, Cypress, Git, JProfiler & RabbitMQ.
-                </p>
-                <h4>Achievements & responsibilities</h4>
-                <ul>
-                    <li>Taking up the role of tech lead</li>
-                    <li>Designing and implementing working solutions for complex functional problems</li>
-                    <li>Designing and implementing an integrated setup for contract testing - all microservice
-                        REST(ful) APIs - with PACT, used by all service and all 8 teams.
-                    </li>
-                    <li>Taking up the role of (shadow) front-end architect</li>
-                    <li>Designing the architecture and performing the setup of the front-end applications</li>
-                    <li>Deciding on & implementing the Authorization code flow with PKCE for OAuth 2.0 for the
-                        front-end applications.
-                    </li>
-                </ul>
-            </div>
-            <div class="z-depth-3 education flex-element no-margin-bottom">
-                <h3>Co-founder & Technical Trainer Switchfully</h3>
-                <div class="cv-details valign-wrapper">
-                    <div class="flex-inner">
-                        <div class="padding-right-half">
-                            <i class="tiny material-icons amber-text text-lighten-3">access_time</i>
-                            Sep. 2017 - Jan. 2020
-                        </div>
-                        <div class="padding-right-half">
-                            <i class="tiny material-icons amber-text text-lighten-3">work</i>
-                            Switchfully (internal venture of Cegeka)
-                        </div>
-                        <div class="padding-right-half">
-                            <i class="tiny material-icons amber-text text-lighten-3">location_on</i>
-                            BeCentral, LCM, FBS Finance,...
-                        </div>
-                    </div>
-                </div>
-                <hr class="fade">
-                <p class="flow-text">
-                    Founding & growing an internal venture called Switchfully.
-                </p>
-                <p>
-                    After having attended an entrepreneurial bootcamp in which I - together with some likeminded
-                    colleagues - worked out the idea of Switchfully and successfully pitched it, we received the
-                    support of Cegeka to found Switchfully as an internal venture.
-                </p>
-                <p>
-                    The value proposition of Switchfully goes as follows: "At Switchfully, we set out to explore
-                    and discover motivated individuals who have a great mindset and are ready for a career
-                    switch. We then retrain these individuals in one of our officially recognized and
-                    battle-proven training tracks to become junior software developers. Your junior software
-                    developers to be precise."
-                </p>
-                <p>
-                    A truly amazing experience all-around.
-                </p>
-                <h4>Technologies used</h4>
-                <p>
-                    Some of the technologies and tools I've used: Java
-                    8+, JDBC, JPA with Hibernate, Spring boot & other (data, web, security,...), MySQL, Oracle SQL,
-                    JUnit, Mockito, Layered architecture,
-                    Jenkins, AWS, Azure, Azure DevOps, Heroku, Docker & Docker compose, Jackson, SOAP, REST(ful),
-                    Maven, MongoDB, Express.js, Vaadin, Angular, TypeScript, NPM, Jasmine, C# (7),
-                    .NET Core, ASP.NET Core, Entity Framework & LINQ.
-                </p>
-                <h4>Achievements & responsibilities</h4>
-                <ul>
-                    <li>Outline, create and maintain a custom, 4-month full-stack training track</li>
-                    <li>Teach, coach and train</li>
-                    <li>Breath and live 'Continuous learning and improvement'</li>
-                    <li>Branding (Creation of logo, website, visuals,...)</li>
-                    <li>Perform online marketing</li>
-                    <li>Recruitment of candidates</li>
-                    <li>Support my colleague and co-founder in sales, organization & finance</li>
-                    <li>Sign our first customer</li>
-                    <li>Move to our own office & classroom at BeCentral Brussels</li>
-                    <li>Work with extremely motivated individuals</li>
-                </ul>
-            </div>
-            <div class="z-depth-3 education flex-element no-margin-bottom">
-                <h3>Full-stack Developer @ VDAB</h3>
-                <div class="cv-details valign-wrapper">
-                    <div class="flex-inner">
-                        <div class="padding-right-half">
-                            <i class="tiny material-icons amber-text text-lighten-3">access_time</i>
-                            Aug. 2015 - Sep. 2017
-                        </div>
-                        <div class="padding-right-half">
-                            <i class="tiny material-icons amber-text text-lighten-3">work</i>
-                            VDAB (on behalf of Cegeka)
-                        </div>
-                        <div class="padding-right-half">
-                            <i class="tiny material-icons amber-text text-lighten-3">location_on</i>
-                            VDAB, Brussels
-                        </div>
-                    </div>
-                </div>
-                <hr class="fade">
-                <p class="flow-text">
-                    Working as a full-stack software developer in an Agile team.
-                </p>
-                <p>
-                    In 2015 I started my professional career as a full-stack developer at Cegeka. For several
-                    years, I have worked for client VDAB on different - mainly greenfield - projects. The VDAB,
-                    being the public employment service of Flanders, has a lot of needs and ideas to transform
-                    their business processes into digital applications and flows. More information on some of
-                    these applications can be found in the <a
-                        href="https://www.linkedin.com/in/niedel/details/projects/" target="_blank"
-                        title="LinkedIn Projects"> Projects section of my LinkedIn profile</a>.
-                </p>
-                <p>
-                    Thanks to a great set of colleagues, I was able to learn a lot on working according to the
-                    Agile methodology by applying Scrum, on eXtreme Programming principles and practices, on
-                    software design and on software development in general.
-                </p>
-                <h4>Technologies used</h4>
-                <p>
-                    Technologies I've used throughout these years include, but are not limited to: Java 8,
-                    Spring Framework, Spring Boot, JPA specification, Hibernate, Jackson, JAX-RS, JAXB, HornetQ,
-                    JUnit, Selenium / Selenide, Mockito, Oracle SQL, MySQL, Flyway, Jenkins, SonarQube, Maven,
-                    Gradle, AngularJS, Angular (2+), NPM, Grunt, Gulp, Webpack, Jasmine (with Karma), Protractor
-                    and many more.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <section class="container skills-section">
-        <div class="row content-wrapper-cv z-depth-5 flex-inner">
-
-            <div class="col s12 l6 no-margin no-padding">
-                <div class="padding-right-half content-wrapper-cv-inner">
-                    <h2 class="no-margin">Hard skills</h2>
-                    <p class="subheader"><em>A non-exhaustive list of hard skills recently & actively applied.</em></p>
-                    <div>
-                        <h5>
-                            Backend development <span class="badge">Java</span>
-                        </h5>
-                        <progress max="100" value="90"></progress>
-                    </div>
-                    <div>
-                        <h5>
-                            Spring <span class="badge">Boot</span> <span class="badge">Framework</span> <span
-                                class="badge">Data</span> <span class="badge">JDBC-data</span> <span
-                                class="badge">Web</span> <span
-                                class="badge">Security</span>
-                        </h5>
-                        <progress max="100" value="80"></progress>
-                    </div>
-                    <div>
-                        <h5>
-                            JDBC / JPA <span class="badge">Hibernate</span>
-                        </h5>
-                        <progress max="100" value="70"></progress>
-                    </div>
-                    <div>
-                        <h5>
-                            Frontend development <span class="badge">Angular</span> <span
-                                class="badge">JavaScript</span> <span class="badge">TypeScript</span> <span
-                                class="badge">Bootstrap</span> <span class="badge">Tailwind</span>
-                        </h5>
-                        <progress max="100" value="75"></progress>
-                    </div>
-                    <div>
-                        <h5>
-                            Build tools <span class="badge">Maven</span> <span class="badge">Gradle</span> <span
-                                class="badge">NPM</span>
-                        </h5>
-                        <progress max="100" value="65"></progress>
-                    </div>
-                    <div>
-                        <h5>
-                            CI/CD <span class="badge">GitHub Actions</span> <span class="badge">Jenkins</span>
-                        </h5>
-                        <progress max="100" value="55"></progress>
-                    </div>
-                    <div>
-                        <h5>
-                            Cloud <span class="badge">Azure</span> <span class="badge">AWS</span> <span class="badge">Terraform</span>
-                            <span class="badge">Kubernetes</span>
-                        </h5>
-                        <progress max="100" value="50"></progress>
-                    </div>
-                    <div>
-                        <h5>
-                            Containerization <span class="badge">Docker</span> <span class="badge">Docker compose</span>
-                        </h5>
-                        <progress max="100" value="65"></progress>
-                    </div>
-                    <div>
-                        <h5>
-                            DB & Migration <span class="badge">SQL</span> <span class="badge">PostgreSQL</span> <span
-                                class="badge">MySQL</span> <span
-                                class="badge">Liquibase</span> <span class="badge">Flyway</span>
-                        </h5>
-                        <progress max="100" value="65"></progress>
-                    </div>
-                    <div>
-                        <h5>
-                            TDD / Testing <span class="badge">JUnit5</span> <span class="badge">JEST</span> <span
-                                class="badge">Cypress</span> <span class="badge">Playwright</span> <span class="badge">Testcontainers</span>
-                        </h5>
-                        <progress max="100" value="90"></progress>
-                    </div>
-                    <div>
-                        <h5>
-                            BDD <span class="badge">Cucumber</span> <span class="badge">Gherkin</span> <span
-                                class="badge">Spock</span>
-                        </h5>
-                        <progress max="100" value="65"></progress>
-                    </div>
-                    <div>
-                        <h5>
-                            Code quality <span class="badge">Clean code</span> <span class="badge">Refactoring</span>
-                            <span class="badge">Sonar</span> <span class="badge">ArchUnit</span>
-                        </h5>
-                        <progress max="100" value="80"></progress>
-                    </div>
-                    <div>
-                        <h5>
-                            Messaging <span class="badge">Pulsar</span> <span class="badge">Debezium</span> <span
-                                class="badge">Service bus</span>
-                        </h5>
-                        <progress max="100" value="50"></progress>
-                    </div>
-                    <div>
-                        <h5>
-                            Observability <span class="badge">Kibana</span> <span class="badge">New Relic</span> <span
-                                class="badge">Prometheus</span> <span class="badge">Grafana</span>
-                        </h5>
-                        <progress max="100" value="50"></progress>
-                    </div>
-                    <div>
-                        <h5>
-                            Methodologies <span class="badge">Agile</span> <span class="badge">Scrum</span> <span
-                                class="badge">Kanban</span>
-                        </h5>
-                        <progress max="100" value="70"></progress>
-                    </div>
-                    <div>
-                        <h5>
-                            PM Tooling <span class="badge">Jira</span> <span class="badge">Confluence</span> <span
-                                class="badge">GitHub Projects</span>
-                        </h5>
-                        <progress max="100" value="65"></progress>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col s12 l6 @extend grey darken-4 no-margin no-padding">
-                <div class="content-wrapper-cv-inner column-to-row">
-                    <h2 class="no-margin">Soft skills & character</h2>
-                    <p class="subheader"><em>A non-exhaustive list of the most outspoken soft skills and character.</em>
-                    </p>
-                    <div class="flex">
-                        <span class="cloud cloud-2">Team player</span>
-                        <span class="cloud cloud-1">Structured</span>
-                        <span class="cloud cloud-2">Creative</span>
-                        <span class="cloud cloud-1">Ownership</span>
-                        <span class="cloud cloud-1">Communication</span>
-                        <span class="cloud cloud-2">Mentoring</span>
-                        <span class="cloud cloud-3">Stress resistant</span>
-                        <span class="cloud cloud-1">Dedication</span>
-                        <span class="cloud cloud-2">Kind</span>
-                        <span class="cloud cloud-3">Helpful</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <section class="container eduction-section">
-        <div class="content-wrapper z-depth-5">
-            <h2 class="no-margin">Higher education</h2>
-
-            <div class="flex">
-                <div class="z-depth-3 education flex-element no-margin-bottom">
-                    <h3>Master of Science (M.S.), MSc. Applied Informatics</h3>
-                    <div class="cv-details valign-wrapper">
-                        <div class="flex-inner">
-                            <div class="padding-right-half">
-                                <i class="tiny material-icons amber-text text-lighten-3">access_time</i>
-                                2012 - 2015
-                            </div>
-                            <div class="padding-right-half">
-                                <i class="tiny material-icons amber-text text-lighten-3">location_on</i>
-                                KUL, Leuven, Belgium
-                            </div>
-                            <div class="padding-right-half">
-                                <i class="tiny material-icons amber-text text-lighten-3">school</i>
-                                Magna Cum Laude
-                            </div>
-                        </div>
-                    </div>
-                    <p class="no-margin-bottom"><em>With an emphasis on software engineering, machine learning, AI &
-                        user interaction.</em></p>
-                </div>
-
-                <div class="z-depth-3 education flex-element no-margin-bottom">
-                    <h3>Professional Bachelor in Applied Informatics</h3>
-                    <div class="cv-details valign-wrapper">
-                        <div class="flex-inner">
-                            <div class="padding-right-half">
-                                <i class="tiny material-icons amber-text text-lighten-3">access_time</i>
-                                2009 - 2012
-                            </div>
-                            <div class="padding-right-half">
-                                <i class="tiny material-icons amber-text text-lighten-3">location_on</i>
-                                PXL, Hasselt, Belgium
-                            </div>
-                            <div class="padding-right-half">
-                                <i class="tiny material-icons amber-text text-lighten-3">school</i>
-                                Cum Laude
-                            </div>
-                        </div>
-                    </div>
-                    <p class="no-margin-bottom"><em>With software development as specialisation and with a four-month
-                        internship at Prague, Czechia.</em></p>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section class="container">
-        <div class="content-wrapper z-depth-5">
-            <h2 class="no-margin">Continuous learning</h2>
-
-            <div class="z-depth-3 learning">
-                <h3>Online courses</h3>
-                <p class="no-margin"><em>A selection of followed courses & tutorials.</em></p>
-                <div class="cv-details valign-wrapper">
-                    <div class="flex-inner">
-                        <div class="padding-right-half">
-                            <i class="tiny material-icons amber-text text-lighten-3">dvr</i>
-                            Official React tutorial
-                        </div>
-                        <div class="padding-right-half">
-                            <i class="tiny material-icons amber-text text-lighten-3">dvr</i>
-                            Official Next.js tutorial
-                        </div>
-                        <div class="padding-right-half">
-                            <i class="tiny material-icons amber-text text-lighten-3">dvr</i>
-                            Official Redux tutorial
-                        </div>
-                        <div class="padding-right-half">
-                            <i class="tiny material-icons amber-text text-lighten-3">dvr</i>
-                            Ultimate AWS Certified Solutions Architect Associate (50% of modules), Stephane Maarek
-                        </div>
-                        <div class="padding-right-half">
-                            <i class="tiny material-icons amber-text text-lighten-3">dvr</i>
-                            Practical Deep Learning for Coders, Part 1
-                        </div>
-                        <div class="padding-right-half">
-                            <i class="tiny material-icons amber-text text-lighten-3">dvr</i>
-                            Hacker's Guide to Language Models
-                        </div>
-                        <div class="padding-right-half">
-                            <i class="tiny material-icons amber-text text-lighten-3">dvr</i>
-                            Azure fundamentals (AZ-900)
-                        </div>
-                        <div class="padding-right-half">
-                            <i class="tiny material-icons amber-text text-lighten-3">dvr</i>
-                            Docker and Kubernetes: The big picture
-                        </div>
-                        <div class="padding-right-half">
-                            <i class="tiny material-icons amber-text text-lighten-3">dvr</i>
-                            Docker For Web Developers
-                        </div>
-                        <div class="padding-right-half">
-                            <i class="tiny material-icons amber-text text-lighten-3">dvr</i>
-                            Handling Data And Stateful Applications in Docker
-                        </div>
-                        <div class="padding-right-half">
-                            <i class="tiny material-icons amber-text text-lighten-3">dvr</i>
-                            Angular Path (PluralSight, Deborah K.)
-                        </div>
-                        <div class="padding-right-half">
-                            <i class="tiny material-icons amber-text text-lighten-3">dvr</i>
-                            Svelte, official tutorial
-                        </div>
-                        <div class="padding-right-half">
-                            <i class="tiny material-icons amber-text text-lighten-3">dvr</i>
-                            Artificial Intelligence Foundation: Neural Networks (LinkedIn Learn)
-                        </div>
-                        <div class="padding-right-half">
-                            <i class="tiny material-icons amber-text text-lighten-3">dvr</i>
-                            Java modularity & what's new in Java
-                        </div>
-                        <div class="padding-right-half">
-                            <i class="tiny material-icons amber-text text-lighten-3">dvr</i>
-                            C# Programming (Microsoft)
-                        </div>
-                        <div class="padding-right-half">
-                            <i class="tiny material-icons amber-text text-lighten-3">dvr</i>
-                            .NET Core (Microsoft)
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="z-depth-3 learning">
-                <h3>Books</h3>
-                <p class="no-margin"><em>A selection of read IT-related books.</em></p>
-                <div class="cv-details valign-wrapper">
-                    <div class="flex-inner">
-                        <div class="padding-right-half">
-                            <i class="tiny material-icons amber-text text-lighten-3">book</i>
-                            Accelerate
-                        </div>
-                        <div class="padding-right-half">
-                            <i class="tiny material-icons amber-text text-lighten-3">book</i>
-                            Generative AI on AWS
-                        </div>
-                        <div class="padding-right-half">
-                            <i class="tiny material-icons amber-text text-lighten-3">book</i>
-                            Spring Microservices in Action
-                        </div>
-                        <div class="padding-right-half">
-                            <i class="tiny material-icons amber-text text-lighten-3">book</i>
-                            The Coming Wave
-                        </div>
-                        <div class="padding-right-half">
-                            <i class="tiny material-icons amber-text text-lighten-3">book</i>
-                            Refactoring UI
-                        </div>
-                        <div class="padding-right-half">
-                            <i class="tiny material-icons amber-text text-lighten-3">book</i>
-                            Terraform: Up & Running
-                        </div>
-                        <div class="padding-right-half">
-                            <i class="tiny material-icons amber-text text-lighten-3">book</i>
-                            Soft Skills: The software developer's life manual
-                        </div>
-                        <div class="padding-right-half">
-                            <i class="tiny material-icons amber-text text-lighten-3">book</i>
-                            Effective Java: Third edition
-                        </div>
-                        <div class="padding-right-half">
-                            <i class="tiny material-icons amber-text text-lighten-3">book</i>
-                            Designing Data-Intensive Applications
-                        </div>
-                        <div class="padding-right-half">
-                            <i class="tiny material-icons amber-text text-lighten-3">book</i>
-                            Clean Code
-                        </div>
-                        <div class="padding-right-half">
-                            <i class="tiny material-icons amber-text text-lighten-3">book</i>
-                            Clean Architecture
-                        </div>
-                        <div class="padding-right-half">
-                            <i class="tiny material-icons amber-text text-lighten-3">book</i>
-                            Refactoring: Improving the Design of Existing Code
-                        </div>
-                        <div class="padding-right-half">
-                            <i class="tiny material-icons amber-text text-lighten-3">book</i>
-                            Building Microservices: Designing Fine-Grained Systems
-                        </div>
-                        <div class="padding-right-half">
-                            <i class="tiny material-icons amber-text text-lighten-3">book</i>
-                            Implementing Domain-Driven Design
-                        </div>
-                        <div class="padding-right-half">
-                            <i class="tiny material-icons amber-text text-lighten-3">book</i>
-                            Patterns, Principles, and Practices of Domain-Driven Design
-                        </div>
-                        <div class="padding-right-half">
-                            <i class="tiny material-icons amber-text text-lighten-3">book</i>
-                            Your Code as a Crime Scene
-                        </div>
-                        <div class="padding-right-half">
-                            <i class="tiny material-icons amber-text text-lighten-3">book</i>
-                            Enterprise Angular Monorepo Patterns
-                        </div>
-                        <div class="padding-right-half">
-                            <i class="tiny material-icons amber-text text-lighten-3">book</i>
-                            Java 9 Modularity: Patterns and Practices
-                        </div>
-                        <div class="padding-right-half">
-                            <i class="tiny material-icons amber-text text-lighten-3">book</i>
-                            Understanding ECMAScript 6
-                        </div>
-                        <div class="padding-right-half">
-                            <i class="tiny material-icons amber-text text-lighten-3">book</i>
-                            Practices of an Agile Developer: Working in the Real World
-                        </div>
-                        <div class="padding-right-half">
-                            <i class="tiny material-icons amber-text text-lighten-3">book</i>
-                            Software Architecture: The Hard Parts
-                        </div>
-                        <div class="padding-right-half">
-                            <i class="tiny material-icons amber-text text-lighten-3">book</i>
-                            Head First Design Patterns
-                        </div>
-                        <div class="padding-right-half">
-                            <i class="tiny material-icons amber-text text-lighten-3">book</i>
-                            Head First Java
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="z-depth-3 learning">
-                <h3>Classroom Trainings & Events</h3>
-                <p class="no-margin"><em>A selection of followed trainings & attended events.</em></p>
-                <div class="cv-details valign-wrapper">
-                    <div class="flex-inner">
-                        <div class="padding-right-half">
-                            <i class="tiny material-icons amber-text text-lighten-3">group</i>
-                            Terraform (workshop)
-                        </div>
-                        <div class="padding-right-half">
-                            <i class="tiny material-icons amber-text text-lighten-3">group</i>
-                            SoCraTes (open space)
-                        </div>
-                        <div class="padding-right-half">
-                            <i class="tiny material-icons amber-text text-lighten-3">group</i>
-                            Core Spring
-                        </div>
-                        <div class="padding-right-half">
-                            <i class="tiny material-icons amber-text text-lighten-3">group</i>
-                            JavaScript: Basics
-                        </div>
-                        <div class="padding-right-half">
-                            <i class="tiny material-icons amber-text text-lighten-3">group</i>
-                            JavaScript: Advanced
-                        </div>
-                        <div class="padding-right-half">
-                            <i class="tiny material-icons amber-text text-lighten-3">group</i>
-                            Insights discovery workshop
-                        </div>
-                        <div class="padding-right-half">
-                            <i class="tiny material-icons amber-text text-lighten-3">group</i>
-                            The 7 habits of highly effective people Training
-                        </div>
-                        <div class="padding-right-half">
-                            <i class="tiny material-icons amber-text text-lighten-3">group</i>
-                            Angular Master Class
-                        </div>
-                        <div class="padding-right-half">
-                            <i class="tiny material-icons amber-text text-lighten-3">group</i>
-                            Agile Introduction
-                        </div>
-                        <div class="padding-right-half">
-                            <i class="tiny material-icons amber-text text-lighten-3">group</i>
-                            Agile Software Engineering
-                        </div>
-                        <div class="padding-right-half">
-                            <i class="tiny material-icons amber-text text-lighten-3">event</i>
-                            Devoxx
-                        </div>
-                        <div class="padding-right-half">
-                            <i class="tiny material-icons amber-text text-lighten-3">event</i>
-                            Exploration Days (Hackathon)
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="z-depth-3 learning no-margin-bottom">
-                <h3>Staying informed</h3>
-                <p class="no-margin"><em>A selection of online news sources that help me stay informed.</em></p>
-                <div class="cv-details valign-wrapper">
-                    <div class="flex-inner">
-                        <div class="padding-right-half">
-                            <i class="tiny material-icons amber-text text-lighten-3">rss_feed</i>
-                            Hacker News
-                        </div>
-                        <div class="padding-right-half">
-                            <i class="tiny material-icons amber-text text-lighten-3">rss_feed</i>
-                            InfoQ
-                        </div>
-                        <div class="padding-right-half">
-                            <i class="tiny material-icons amber-text text-lighten-3">rss_feed</i>
-                            Ars Technica
-                        </div>
-                        <div class="padding-right-half">
-                            <i class="tiny material-icons amber-text text-lighten-3">rss_feed</i>
-                            InfoWorld
-                        </div>
-                        <div class="padding-right-half">
-                            <i class="tiny material-icons amber-text text-lighten-3">rss_feed</i>
-                            DZone
-                        </div>
-                        <div class="padding-right-half">
-                            <i class="tiny material-icons amber-text text-lighten-3">rss_feed</i>
-                            (some) Newsletters
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <section class="container language-section">
-        <div class="content-wrapper z-depth-5">
-            <h2 class="no-margin">Languages</h2>
-
-            <div class="flex">
-                <div class="flex-element z-depth-3 languages no-margin-bottom">
-                    <h3>Dutch</h3>
-                    <div class="cv-details valign-wrapper">
-                        <div class="flex">
-                            <div class="padding-right-half">
-                                <i class="tiny material-icons amber-text text-lighten-3">language</i>
-                                Native proficiency (5)
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex-element z-depth-3 languages no-margin-bottom">
-                    <h3>English</h3>
-                    <div class="cv-details valign-wrapper">
-                        <div class="flex">
-                            <div class="padding-right-half">
-                                <i class="tiny material-icons amber-text text-lighten-3">language</i>
-                                Full professional proficiency (4)
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex-element z-depth-3 languages no-margin-bottom">
-                    <h3>French</h3>
-                    <div class="cv-details valign-wrapper">
-                        <div class="flex">
-                            <div class="padding-right-half">
-                                <i class="tiny material-icons amber-text text-lighten-3">language</i>
-                                Limited working proficiency (2)
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <section class="container no-margin-bottom">
-        <div class="content-wrapper z-depth-5 no-margin-bottom">
-            <h2 class="no-margin">Want to get in touch?</h2>
-            <p class="flow-text no-margin-bottom no-padding-bottom">
-                Feel free to contact me through <a href="mailto:cv@niedel.be">cv@niedel.be</a> or <a
-                    href="https://www.linkedin.com/in/niedel" target="_blank"
-                    title="LinkedIn">linkedin.com/in/niedel</a>.
-            </p>
-        </div>
-    </section>
+            </main>
+        </section>
+    </div>
 
 </div>
