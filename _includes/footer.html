@@ -1,11 +1,11 @@
 <footer class="w-full">
     <section class="bg-gray-900 shadow-lg p-2 md:p-5">
-        <div class="container mx-auto px-6 py-4 flex flex-row gap-15">
-            <div class="basis-2/4">
+        <div class="container mx-auto px-6 py-4 flex flex-col lg:flex-row gap-15">
+            <div class="basis-3/3 lg:basis-2/4">
                 <h3 class="text-lg font-bold text-gray-300 mb-2">Niels Delestinne</h3>
                 <p class="text-lg">{{- site.description | escape -}}</p>
             </div>
-            <div class="basis-1/4">
+            <div class="basis-3/3 lg:basis-1/4">
                 <h3 class="text-lg font-bold text-gray-300 mb-2">Navigation</h3>
                 <ul>
                     {%- for path in page_paths -%}
@@ -16,7 +16,7 @@
                     {%- endfor -%}
                 </ul>
             </div>
-            <div class="basis-1/4">
+            <div class="basis-3/3 lg:basis-1/4">
                 <h3 class="text-lg font-bold text-gray-300 mb-2">Find me on</h3>
                 {%- include social.html -%}
             </div>
