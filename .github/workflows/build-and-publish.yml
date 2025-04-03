@@ -26,7 +26,7 @@ jobs:
           path: _site
 
       - name: Deploy using FTP
-        uses: sebastianpopp/ftp-action@v3
+        uses: sebastianpopp/ftp-action@releases/v2
         with:
           host: ${{ secrets.FTP_SERVER }}
           user: ${{ secrets.FTP_USERNAME }}
